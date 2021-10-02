@@ -20,10 +20,6 @@ export default function Resource() {
           <h3 style={{ fontFamily: "Poppins" }}>AI/ML</h3>
           <img src={ml} alt="ML" width="300px" />
         </Card>
-        <Card class="Card">
-          <h3 style={{ fontFamily: "Poppins" }}>AI/ML</h3>
-          <img src={ml} alt="ML" width="300px" />
-        </Card>
       </div>
     </>
   );
