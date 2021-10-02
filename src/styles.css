@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(223, 194, 250);
+}
+#head {
+  background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
+  padding: 1%;
+}
+.Card {
+  width: max-content !important;
+  background-color: #f4f0ff !important;
+  margin: 2%;
+  padding: 1%;
+}
+.Card:hover {
+  transform: scale(1.1);
+}
