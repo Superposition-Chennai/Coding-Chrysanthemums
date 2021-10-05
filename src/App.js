@@ -1,12 +1,10 @@
 import "./styles.css";
-import Navi from "./components/header";
 import title from "./img/title.png";
 import Resource from "./components/resources";
 
 export default function App() {
   return (
     <div className="App">
-      <Navi />
       <div
         id="head"
         style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
