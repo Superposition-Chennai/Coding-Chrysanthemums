@@ -7,7 +7,13 @@ export default function App() {
     <div className="App">
       <div
         id="head"
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          overflowY: "hidden",
+          height: "max-content"
+        }}
       >
         <div>
           <br />

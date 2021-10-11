@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGit, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 export default function AIML() {
   return (
@@ -73,7 +73,7 @@ export default function AIML() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Intro to ML with Python</h4>
+                <h4>ML with Python</h4>
                 <p>
                   Amueller{" "}
                   <a href="https://github.com/amueller/introduction_to_ml_with_python">

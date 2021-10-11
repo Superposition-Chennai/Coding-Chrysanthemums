@@ -6,10 +6,9 @@
   background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   align-content: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 91vh;
 }
 html {
-  max-width: 100%;
   overflow-x: hidden;
 }
 #head {
