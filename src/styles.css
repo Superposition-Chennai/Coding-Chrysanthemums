@@ -2,34 +2,39 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: rgb(223, 194, 250);
+  /* background-color: rgb(223, 194, 250); */
+  background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   align-content: center;
   justify-content: center;
+  min-height: 100vh;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 #head {
-  background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   padding: 1%;
 }
 .Card {
-  width: max-content !important;
+  min-width: 230px;
   background-color: #f4f0ff !important;
   margin: 2%;
   padding: 1%;
+  height: max-content;
   text-decoration: none;
 }
 .Card:hover {
-  transform: scale(1.1);
+  background-color: #ff5982;
 }
 .Card1 {
-  width: 250px !important;
+  min-width: 230px;
   background-color: #f4f0ff !important;
-  margin: 2%;
-  padding: 1% 0;
+  padding: 1%;
   text-decoration: none;
 }
 .item {
-  width: 250px;
-  margin: 1%;
+  width: 300px;
+  padding: 1%;
 }
 a {
   color: #ff59b4;
@@ -42,4 +47,19 @@ a:visited {
 }
 a:visited:hover {
   color: #ff5982;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Card1 {
+    justify-content: center;
+  }
 }

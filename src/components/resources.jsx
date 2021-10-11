@@ -7,7 +7,13 @@ export default function Resource() {
   return (
     <>
       <div
-        style={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
+        style={{
+          justifyContent: "center",
+          display: "flex",
+          flexWrap: "wrap",
+          transform: "translateY(-3%)",
+          minHeight: "100vh"
+        }}
       >
         <Link to="/dsa" className="Card">
           <Card>

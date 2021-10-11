@@ -11,8 +11,6 @@ export default function App() {
       >
         <div>
           <br />
-          <br />
-          <br />
           <b>
             <h1 style={{ fontFamily: "Poppins, sans-serif" }}>
               Coding Chrysanthemums
@@ -24,9 +22,9 @@ export default function App() {
         </div>
         <img
           src={title}
-          width="250px"
+          width="200px"
           alt="title"
-          style={{ transform: "translateY(-5%)" }}
+          style={{ transform: "translateY(-10%)" }}
         />
       </div>
       <Resource />
