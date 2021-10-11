@@ -3,6 +3,8 @@
   font-family: sans-serif;
   text-align: center;
   background-color: rgb(223, 194, 250);
+  align-content: center;
+  justify-content: center;
 }
 #head {
   background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
@@ -13,7 +15,31 @@
   background-color: #f4f0ff !important;
   margin: 2%;
   padding: 1%;
+  text-decoration: none;
 }
 .Card:hover {
   transform: scale(1.1);
+}
+.Card1 {
+  width: 250px !important;
+  background-color: #f4f0ff !important;
+  margin: 2%;
+  padding: 1% 0;
+  text-decoration: none;
+}
+.item {
+  width: 250px;
+  margin: 1%;
+}
+a {
+  color: #ff59b4;
+}
+a:hover {
+  color: #ff5982;
+}
+a:visited {
+  color: #a159ff;
+}
+a:visited:hover {
+  color: #ff5982;
 }
