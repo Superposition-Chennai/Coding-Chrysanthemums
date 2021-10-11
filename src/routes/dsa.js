@@ -20,21 +20,13 @@ export default function DSA() {
           style={{
             fontFamily: "Poppins",
             width: "100%",
-            alignContent: "center"
+            alignContent: "center",
+            margin: "1%"
           }}
         >
           <h1>DSA Resources</h1>
           <img src={title} alt="title" width="200px" />
-          <div
-            style={{
-              display: "flex",
-              alignContent: "center",
-              justifyContent: "flex-start",
-              margin: "auto",
-              flexWrap: "wrap",
-              width: "100%"
-            }}
-          >
+          <div className="list">
             <div className="item">
               <Card className="Card1">
                 <h4>DS Collection</h4>
@@ -107,6 +99,17 @@ export default function DSA() {
                 <p>
                   The Algorithms{" "}
                   <a href="https://github.com/TheAlgorithms/Python/">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Java Algorithms</h4>
+                <p>
+                  The Algorithms{" "}
+                  <a href="https://github.com/TheAlgorithms/Java/">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </p>
