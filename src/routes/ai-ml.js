@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faGit, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 export default function AIML() {
   return (
@@ -29,10 +29,10 @@ export default function AIML() {
           <div className="list">
             <div className="item">
               <Card className="Card1">
-                <h4>DS Collection</h4>
+                <h4>Machine Learning</h4>
                 <p>
                   Geeks for Geeks{" "}
-                  <a href="https://www.geeksforgeeks.org/data-structures">
+                  <a href="https://www.geeksforgeeks.org/machine-learning/">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -40,10 +40,10 @@ export default function AIML() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Algo Collection</h4>
+                <h4>ML Courses</h4>
                 <p>
-                  Geeks for Geeks{" "}
-                  <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">
+                  Kaggle{" "}
+                  <a href="https://www.kaggle.com/learn">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -51,43 +51,10 @@ export default function AIML() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Learn DSA</h4>
+                <h4>30 Days of ML</h4>
                 <p>
-                  Programiz{" "}
-                  <a href="https://www.programiz.com/dsa">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Algorithms Notes</h4>
-                <p>
-                  GoalKicker{" "}
-                  <a href="https://books.goalkicker.com/AlgorithmsBook/">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>DSA with Java</h4>
-                <p>
-                  Community Classroom{" "}
-                  <a href="https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ">
-                    <FontAwesomeIcon icon={faYoutube} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>C++ Algorithms</h4>
-                <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/C-Plus-Plus/">
+                  Rakshaa Viswanathan{" "}
+                  <a href="https://github.com/rakshaa2000/30-Days-of-ML">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </p>
@@ -95,10 +62,21 @@ export default function AIML() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Python Algorithms</h4>
+                <h4>Crash Course</h4>
                 <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/Python/">
+                  Google Developers{" "}
+                  <a href="https://developers.google.com/machine-learning/crash-course">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Intro to ML with Python</h4>
+                <p>
+                  Amueller{" "}
+                  <a href="https://github.com/amueller/introduction_to_ml_with_python">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </p>
@@ -106,11 +84,33 @@ export default function AIML() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Java Algorithms</h4>
+                <h4>Machine Learning</h4>
                 <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/Java/">
-                    <FontAwesomeIcon icon={faGithub} />
+                  Coursera{" "}
+                  <a href="https://www.coursera.org/learn/machine-learning">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Common Algorithms</h4>
+                <p>
+                  Analytics Vidhya{" "}
+                  <a href="https://www.analyticsvidhya.com/blog/2017/09/common-machine-learning-algorithms/">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Intro to ML</h4>
+                <p>
+                  TechNova{" "}
+                  <a href="https://bit.ly/basics-of-ml-workshop-slides">
+                    <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
               </Card>
