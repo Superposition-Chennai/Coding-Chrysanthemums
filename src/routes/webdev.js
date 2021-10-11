@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 export default function WebDev() {
@@ -29,10 +29,21 @@ export default function WebDev() {
           <div className="list">
             <div className="item">
               <Card className="Card1">
-                <h4>DS Collection</h4>
+                <h4>Frontend Roadmap</h4>
+                <p>
+                  Roadmap.sh{" "}
+                  <a href="https://roadmap.sh/frontend">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Web Dev Collection</h4>
                 <p>
                   Geeks for Geeks{" "}
-                  <a href="https://www.geeksforgeeks.org/data-structures">
+                  <a href="https://www.geeksforgeeks.org/web-development/">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -40,10 +51,10 @@ export default function WebDev() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Algo Collection</h4>
+                <h4>Backend Roadmap</h4>
                 <p>
-                  Geeks for Geeks{" "}
-                  <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">
+                  Roadmap.sh{" "}
+                  <a href="https://roadmap.sh/backend">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -51,10 +62,10 @@ export default function WebDev() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Learn DSA</h4>
+                <h4>React Roadmap</h4>
                 <p>
-                  Programiz{" "}
-                  <a href="https://www.programiz.com/dsa">
+                  Roadmap.sh{" "}
+                  <a href="https://roadmap.sh/react">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -62,10 +73,10 @@ export default function WebDev() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Algorithms Notes</h4>
+                <h4>Web Dev Courses</h4>
                 <p>
-                  GoalKicker{" "}
-                  <a href="https://books.goalkicker.com/AlgorithmsBook/">
+                  FreeCodeCamp{" "}
+                  <a href="https://www.freecodecamp.org/learn/">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
@@ -73,44 +84,33 @@ export default function WebDev() {
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>DSA with Java</h4>
+                <h4>JavaScript Course</h4>
                 <p>
-                  Community Classroom{" "}
-                  <a href="https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ">
-                    <FontAwesomeIcon icon={faYoutube} />
+                  Codecademy{" "}
+                  <a href="https://www.codecademy.com/learn/introduction-to-javascript">
+                    <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
               </Card>
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>C++ Algorithms</h4>
+                <h4>Eloquent JavaScript</h4>
                 <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/C-Plus-Plus/">
-                    <FontAwesomeIcon icon={faGithub} />
+                  Marijn Haverbeke{" "}
+                  <a href="https://eloquentjavascript.net/">
+                    <FontAwesomeIcon icon={faBook} />
                   </a>
                 </p>
               </Card>
             </div>
             <div className="item">
               <Card className="Card1">
-                <h4>Python Algorithms</h4>
+                <h4>Web Dev Courses</h4>
                 <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/Python/">
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Java Algorithms</h4>
-                <p>
-                  The Algorithms{" "}
-                  <a href="https://github.com/TheAlgorithms/Java/">
-                    <FontAwesomeIcon icon={faGithub} />
+                  w3 Schools{" "}
+                  <a href="https://www.w3schools.com/">
+                    <FontAwesomeIcon icon={faLink} />
                   </a>
                 </p>
               </Card>

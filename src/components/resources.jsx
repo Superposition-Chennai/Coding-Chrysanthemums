@@ -11,8 +11,7 @@ export default function Resource() {
           justifyContent: "center",
           display: "flex",
           flexWrap: "wrap",
-          transform: "translateY(-3%)",
-          minHeight: "100vh"
+          transform: "translateY(-3%)"
         }}
       >
         <Link to="/dsa" className="Card">
