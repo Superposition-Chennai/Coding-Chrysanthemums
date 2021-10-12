@@ -1,6 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBook,
+  faCalculator,
+  faLink,
+  faToolbox
+} from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 export default function AIML() {
@@ -111,6 +116,61 @@ export default function AIML() {
                   TechNova{" "}
                   <a href="https://bit.ly/basics-of-ml-workshop-slides">
                     <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Learn AI</h4>
+                <p>
+                  Google{" "}
+                  <a href="https://ai.google/education/">
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>AI Programming</h4>
+                <p>
+                  Peter Norvig{" "}
+                  <a href="https://github.com/norvig/paip-lisp">
+                    <FontAwesomeIcon icon={faBook} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>LP3THW</h4>
+                <p>
+                  Zed Shaw{" "}
+                  <a href="https://learnpythonthehardway.org/python3/">
+                    <FontAwesomeIcon icon={faBook} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Starter Kits</h4>
+                <p>
+                  IBM{" "}
+                  <a href="https://cloud.ibm.com/developer/watson/starter-kits">
+                    <FontAwesomeIcon icon={faToolbox} />
+                  </a>
+                </p>
+              </Card>
+            </div>
+            <div className="item">
+              <Card className="Card1">
+                <h4>Linear Algebra</h4>
+                <p>
+                  MIT{" "}
+                  <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">
+                    <FontAwesomeIcon icon={faCalculator} />
                   </a>
                 </p>
               </Card>
