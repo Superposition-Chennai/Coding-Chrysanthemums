@@ -3,7 +3,16 @@ import { Card } from "@material-ui/core";
 import { faBook, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
+import CardRes from "./cardres";
 export default function WebDev() {
+  const resources = [
+    {title: "Web Dev Roadmap", name: "Roadmap.sh", link:"https://roadmap.sh/" },
+    {title: "Web Dev Collection", name: "GeeksforGeeks", link:"https://www.geeksforgeeks.org/web-development/" },
+    {title: "Web Dev Courses", name: "freeCodeCamp", link:"https://www.freecodecamp.org/learn/" },
+    {title: "JavaScript Course", name: "Codecademy", link:"https://www.codecademy.com/learn/introduction-to-javascript" },
+    {title: "Eloquent JavaScript", name: "Marijn Haverbeke", link:"https://eloquentjavascript.net/" },
+    {title: "Web Dev Courses", name: "W3 Schools", link:"https://www.w3schools.com/" },
+  ];
   return (
     <>
       <div
@@ -27,94 +36,7 @@ export default function WebDev() {
           <h1>Web Dev Resources</h1>
           <img src={title} alt="title" width="200px" />
           <div className="list">
-            <div className="item">
-              <Card className="Card1">
-                <h4>Frontend Roadmap</h4>
-                <p>
-                  Roadmap.sh{" "}
-                  <a href="https://roadmap.sh/frontend">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Web Dev Collection</h4>
-                <p>
-                  Geeks for Geeks{" "}
-                  <a href="https://www.geeksforgeeks.org/web-development/">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Backend Roadmap</h4>
-                <p>
-                  Roadmap.sh{" "}
-                  <a href="https://roadmap.sh/backend">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>React Roadmap</h4>
-                <p>
-                  Roadmap.sh{" "}
-                  <a href="https://roadmap.sh/react">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Web Dev Courses</h4>
-                <p>
-                  FreeCodeCamp{" "}
-                  <a href="https://www.freecodecamp.org/learn/">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>JavaScript Course</h4>
-                <p>
-                  Codecademy{" "}
-                  <a href="https://www.codecademy.com/learn/introduction-to-javascript">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Eloquent JavaScript</h4>
-                <p>
-                  Marijn Haverbeke{" "}
-                  <a href="https://eloquentjavascript.net/">
-                    <FontAwesomeIcon icon={faBook} />
-                  </a>
-                </p>
-              </Card>
-            </div>
-            <div className="item">
-              <Card className="Card1">
-                <h4>Web Dev Courses</h4>
-                <p>
-                  w3 Schools{" "}
-                  <a href="https://www.w3schools.com/">
-                    <FontAwesomeIcon icon={faLink} />
-                  </a>
-                </p>
-              </Card>
-            </div>
+            {resources.map(CardRes)}
           </div>
         </div>
       </div>
