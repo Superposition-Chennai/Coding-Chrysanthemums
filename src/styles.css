@@ -71,6 +71,7 @@ a:visited:hover {
 }
 @media (max-width: 800px) {
   .list {
+    width: 100vw;
     flex-direction: row;
     justify-content: center;
   }
@@ -78,6 +79,7 @@ a:visited:hover {
     justify-content: center;
   }
   .list1 {
+    width: 100vw;
     flex-direction: row;
     justify-content: center;
   }
