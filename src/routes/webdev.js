@@ -15,23 +15,20 @@ export default function WebDev() {
     <>
       <div
         className="App"
-        id="head"
-        style={{
+        id="head" style={{
+          fontFamily: "Poppins",
+          width: "100%",
           alignContent: "center",
-          justifyContent: "center",
-          display: "flex",
-          flexWrap: "wrap"
-        }}
+          padding: "1.5%"}}
       >
         <div
           style={{
             fontFamily: "Poppins",
             width: "100%",
             alignContent: "center",
-            margin: "1%"
           }}
         >
-          <h1>Web Dev Resources</h1>
+          <h2>Web Dev Resources</h2>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
