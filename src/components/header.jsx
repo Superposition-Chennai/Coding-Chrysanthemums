@@ -6,12 +6,13 @@ import {
   Route
 } from "react-router-dom";
 
-import logo from "../img/Insta posts (4).png";
+import logo from "../img/webdev.png";
 import DSA from "../routes/dsa.js";
 import AIML from "../routes/ai-ml.js";
 import WebDev from "../routes/webdev.js";
 import App from "../App";
 import Womentors from "../routes/womentors";
+import Gallery from "../routes/projectgallery";
 const Navi = () => {
   return (
     <>
@@ -47,6 +48,9 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/womentors">
                     Womentors
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/gallery">
+                    Gallery
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -66,6 +70,9 @@ const Navi = () => {
             </Route>
             <Route path="/womentors">
               <Womentors></Womentors>
+            </Route>
+            <Route path="/gallery">
+              <Gallery/>
             </Route>
           </Switch>
         </Router>

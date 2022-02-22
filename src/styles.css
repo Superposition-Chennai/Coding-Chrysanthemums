@@ -31,9 +31,19 @@ html {
   padding: 1%;
   text-decoration: none;
 }
+.Card2 {
+  min-width: 260px;
+  background-color: #fcf4f7 !important;
+  text-decoration: none;
+}
 .item {
   width: 300px;
   padding: 1%;
+}
+.item1 {
+  width: 230px;
+  padding: 1%;
+  margin: 0.9%;
 }
 a {
   color: #ff59b4;
@@ -53,12 +63,25 @@ a:visited:hover {
   width: 100vw;
   margin: 0;
 }
+.list1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 0;
+}
 @media (max-width: 800px) {
   .list {
     flex-direction: row;
     justify-content: center;
   }
   .Card1 {
+    justify-content: center;
+  }
+  .list1 {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Card2 {
     justify-content: center;
   }
 }
