@@ -7,7 +7,7 @@ function ProjectGallery(props){
     return(
         <Card className="Card2 item1">
         <img src={props.img} width="100%"/>
-        <Typography variant="h6">{props.name}{" "}<a href={props.link}><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></Typography>
+        <Typography variant="h6">{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></Typography>
         </Card>
     )
 };

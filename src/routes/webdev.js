@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card } from "@material-ui/core";
-import { faBook, faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "./cardres";
+import { useState } from "react";
 export default function WebDev() {
   const resources = [
     {title: "Web Dev Roadmap", name: "Roadmap.sh", link:"https://roadmap.sh/" },
@@ -13,6 +10,7 @@ export default function WebDev() {
     {title: "Eloquent JavaScript", name: "Marijn Haverbeke", link:"https://eloquentjavascript.net/" },
     {title: "Web Dev Courses", name: "W3 Schools", link:"https://www.w3schools.com/" },
   ];
+  const [search, setSearch]= useState('');
   return (
     <>
       <div
@@ -35,8 +33,19 @@ export default function WebDev() {
         >
           <h1>Web Dev Resources</h1>
           <img src={title} alt="title" width="200px" />
+          <input type="text" placeholder="Search a resource" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
-            {resources.map(CardRes)}
+            {resources.filter((val)=>{
+              if(search==""){
+                return val;
+              }
+              else if (val.title.toLowerCase().includes(search.toLowerCase())){
+                return val;
+              }
+              else if (val.name.toLowerCase().includes(search.toLowerCase())){
+                return val;
+              }  
+            }).map(CardRes)}
           </div>
         </div>
       </div>

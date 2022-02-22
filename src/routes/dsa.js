@@ -4,6 +4,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "./cardres";
+import { useState } from "react";
 export default function DSA() {
   const resources = [
     {title: "DS Collection", name: "GeeksforGeeks", link:"https://www.geeksforgeeks.org/data-structures" },
@@ -13,6 +14,7 @@ export default function DSA() {
     {title: "DSA with Java", name: "Community Classroom", link:"https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ" },
     {title: "C++, Java, Python Algorithms", name: "The Algorithms", link:"https://github.com/TheAlgorithms/" },
   ];
+  const [search, setSearch]= useState('');
   return (
     <>
       <div
@@ -35,8 +37,19 @@ export default function DSA() {
         >
           <h1>DSA Resources</h1>
           <img src={title} alt="title" width="200px" />
+          <input type="text" placeholder="Search a resource" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
-            {resources.map(CardRes)}
+            {resources.filter((val)=>{
+              if(search==""){
+                return val;
+              }
+              else if (val.title.toLowerCase().includes(search.toLowerCase())){
+                return val;
+              }
+              else if (val.name.toLowerCase().includes(search.toLowerCase())){
+                return val;
+              }  
+            }).map(CardRes)}
           </div>
         </div>
       </div>

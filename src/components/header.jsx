@@ -13,6 +13,7 @@ import WebDev from "../routes/webdev.js";
 import App from "../App";
 import Womentors from "../routes/womentors";
 import Gallery from "../routes/projectgallery";
+import Opportunities from "../routes/opportunities";
 const Navi = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Navi = () => {
         <Router>
           <Navbar variant="dark" bg="dark" expand="lg" sticky="top">
             <Container>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand as={NavLink} to="/">
                 <img
                   src={logo}
                   width="40"
@@ -29,7 +30,7 @@ const Navi = () => {
                   alt="React Bootstrap logo"
                 />
               </Navbar.Brand>
-              <Navbar.Brand to="/">Coding Chrysanthemums</Navbar.Brand>
+              <Navbar.Brand as={NavLink} to="/">Coding Chrysanthemums</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
@@ -50,6 +51,9 @@ const Navi = () => {
                   </Nav.Link>
                   <Nav.Link as={NavLink} to="/gallery">
                     Gallery
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/opportunities">
+                    Opportunities
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -73,6 +77,9 @@ const Navi = () => {
             </Route>
             <Route path="/gallery">
               <Gallery/>
+            </Route>
+            <Route path="/opportunities">
+              <Opportunities></Opportunities>
             </Route>
           </Switch>
         </Router>
