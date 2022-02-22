@@ -1,6 +1,8 @@
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "./cardres";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function WebDev() {
   const resources = [
     {title: "Web Dev Roadmap", name: "Roadmap.sh", link:"https://roadmap.sh/" },
@@ -44,6 +46,7 @@ export default function WebDev() {
               }  
             }).map(CardRes)}
           </div>
+          <h6>Want to add a resource here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
         </div>
       </div>
     </>

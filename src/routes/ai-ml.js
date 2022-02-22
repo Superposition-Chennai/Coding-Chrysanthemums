@@ -1,6 +1,8 @@
 import title from "../img/Software engineer-cuate.png";
 import { useState } from "react";
 import CardRes from "./cardres"
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function AIML() {
 
   let resources = [
@@ -27,7 +29,6 @@ export default function AIML() {
   ];
   const [search, setSearch] = useState('');
   return (
-    <>
       <div
         className="App"
         id="head" style={{
@@ -59,8 +60,9 @@ export default function AIML() {
               }  
             }).map(CardRes)}
           </div>
+          <h6>Want to add a resource here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
         </div>
       </div>
-    </>
+
   );
 }

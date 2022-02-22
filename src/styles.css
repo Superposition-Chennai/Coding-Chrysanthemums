@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .App {
-  font-family: sans-serif;
+  font-family: "Poppins";
   text-align: center;
   /* background-color: rgb(223, 194, 250); */
   background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
@@ -33,6 +33,10 @@ html {
 }
 .Card2 {
   min-width: 260px;
+  background-color: #fcf4f7 !important;
+  text-decoration: none;
+}
+.hack {
   background-color: #fcf4f7 !important;
   text-decoration: none;
 }
@@ -80,10 +84,24 @@ a:visited:hover {
   }
   .list1 {
     width: 100vw;
+    height: max-content;
     flex-direction: row;
     justify-content: center;
   }
+  .list1 img{
+    margin: 1%;
+  }
+  
+.item1 {
+  padding: 15px;
+  margin: 1%;
+}
+  .hack{
+    height: fit-content;
+    justify-content: center;
+  }
   .Card2 {
+    height: fit-content;
     justify-content: center;
   }
 }

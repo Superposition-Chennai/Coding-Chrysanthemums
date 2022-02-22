@@ -48,6 +48,7 @@ export default function DSA() {
               }  
             }).map(CardRes)}
           </div>
+          <h6>Want to add a resource here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
         </div>
       </div>
     </>
