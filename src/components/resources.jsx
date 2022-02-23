@@ -6,30 +6,29 @@ import { Link } from "react-router-dom";
 export default function Resource() {
   return (
     <>
-      <div
+      <div className="list"
         style={{
-          justifyContent: "center",
+          justifyContent: "space-evenly",
           display: "flex",
           flexWrap: "wrap",
-          transform: "translateY(-3%)"
         }}
       >
-        <Link to="/dsa" className="Card">
-          <Card>
+        <Link to="/dsa">
+          <Card  className="Card">
             <h3 style={{ fontFamily: "Poppins" }}>DSA</h3>
-            <img src={dsa} alt="DSA" width="300px" />
+            <img src={dsa} alt="DSA" width="250px" />
           </Card>
         </Link>
-        <Link to="/webdev" className="Card">
-          <Card>
+        <Link to="/webdev">
+          <Card  className="Card">
             <h3 style={{ fontFamily: "Poppins" }}>Web Dev</h3>
-            <img src={web} alt="Web" width="300px" />
+            <img src={web} alt="Web" width="250px" />
           </Card>
         </Link>
-        <Link to="/ai" className="Card">
-          <Card>
+        <Link to="/ai">
+          <Card  className="Card">
             <h3 style={{ fontFamily: "Poppins" }}>AI/ML</h3>
-            <img src={ml} alt="ML" width="300px" />
+            <img src={ml} alt="ML" width="250px" />
           </Card>
         </Link>
       </div>

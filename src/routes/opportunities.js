@@ -1,16 +1,19 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card, Typography } from "@material-ui/core";
+import { Button, Card, CardActions, Typography } from "@material-ui/core";
 import { keys } from "@material-ui/core/styles/createBreakpoints";
 import { useState } from "react";
 
 function Opportunity(props){
     return(
         <Card className="Card2 item1">
-            <h6>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faPenClip}/></a></h6>
+            <h5>{props.name} </h5>
             <Typography variant="subtitle1">{props.type}</Typography>
             <Typography variant="subtitle2">{props.time}</Typography>
+            <CardActions>
+                <Button size="small" href={props.link} className="lm">Learn More </Button>
+            </CardActions>
         </Card>
     )
 }

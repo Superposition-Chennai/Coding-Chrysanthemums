@@ -15,6 +15,7 @@ import Womentors from "../routes/womentors";
 import Gallery from "../routes/projectgallery";
 import Opportunities from "../routes/opportunities";
 import Hackathons from "../routes/hackathons";
+import ResApp from "../routes/resources";
 const Navi = () => {
   return (
     <>
@@ -38,17 +39,8 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/">
                     Home
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/dsa">
-                    DSA
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/webdev">
-                    Web Dev
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/ai">
-                    AI/ML
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/womentors">
-                    Womentors
+                  <Nav.Link as={NavLink} to="/resources">
+                    Resources
                   </Nav.Link>
                   <Nav.Link as={NavLink} to="/gallery">
                     Gallery
@@ -59,6 +51,9 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/hackathons">
                     Hackathons
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/womentors">
+                    Womentors
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -66,6 +61,9 @@ const Navi = () => {
           <Switch>
             <Route exact path="/">
               <App />
+            </Route>
+            <Route exact path="/resources">
+              <ResApp />
             </Route>
             <Route path="/dsa">
               <DSA />

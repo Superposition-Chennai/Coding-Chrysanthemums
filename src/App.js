@@ -1,39 +1,58 @@
 import "./styles.css";
 import title from "./img/title.png";
-import Resource from "./components/resources";
+import {Card, CardActionArea} from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App">
-      <div
-        id="head"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          overflowY: "hidden",
-          height: "max-content"
-        }}
-      >
+    <div className="App" style={{
+      fontFamily: "Poppins",
+      width: "100%",
+      alignContent: "center",
+      padding: "2%"}}>
         <div>
-          <br />
           <b>
             <h1 style={{ fontFamily: "Poppins, sans-serif" }}>
               Coding Chrysanthemums
             </h1>
           </b>
           <h4 style={{ fontFamily: "Georgia" }}>
-            <i>Resources for Coding from scratch</i>
+            <i>One stop shop for Underrepresented Genders in Tech</i>
           </h4>
         </div>
-        <img
-          src={title}
-          width="200px"
-          alt="title"
-          style={{ transform: "translateY(-10%)" }}
-        />
-      </div>
-      <Resource />
-    </div>
+        <div id="homepage">
+        <div className="insidediv" >
+          <Card className="Card">
+            <Link to="/resources" className="link">
+            <h5>Resources</h5>
+            </Link>
+            <p>Find resources that help you start out with Coding</p>
+          </Card>
+          
+          <Card className="Card">
+            <Link to="/opportunities" className="link"><h5>Opportunities</h5></Link>
+            <p>Find Scholarships,  Fellowships, and many more</p>
+          </Card>
+          </div>
+          <img
+              src={title}
+              width="300px"
+              alt="title"
+            />
+        <div className="insidediv">
+          
+        <Card className="Card">
+        <Link to="/hackathons" className="link"><h5>Hackathons</h5></Link>
+          <p>Find Diversity themed Hackathons to apply your learning</p>
+        </Card>
+        <Card className="Card">
+        <Link to="/gallery" className="link"><h5>Project Gallery</h5></Link>
+          <p>View some cool projects and submit yours too :D</p>
+        </Card>
+        </div>
+          
+        </div>
+        </div>
+      
   );
 }
