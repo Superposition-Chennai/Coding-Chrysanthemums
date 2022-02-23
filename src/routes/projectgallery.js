@@ -2,14 +2,19 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, Typography } from "@material-ui/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Carousel, CarouselItem } from "react-bootstrap";
 
 function ProjectGallery(props){
     return(
-        <Card className="Card2 item1">
-        <img src={props.img} width="100%" style={{marginBottom:"2px"}}/>
-        <h5 style={{fontWeight:"600"}}>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
-        <p>{props.desc}</p>
+        <CarouselItem className="caroitem" >
+        <Card className="carocard">
+        <img src={props.img} width="300px"/>
+        <Carousel.Caption>
+        <h5 style={{fontWeight:"600", color:"#fff"}}>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
+        <p style={{flexWrap:"wrap", color:"#fff"}}>{props.desc}</p>
+        </Carousel.Caption>
         </Card>
+        </CarouselItem>
     )
 };
 
@@ -51,12 +56,18 @@ export default function Gallery(){
             fontFamily: "Poppins",
             width: "100%",
             alignContent: "center",
+            justifyContent:"center",
             padding: "2%"}}
             >
                 <h2 >Project Gallery</h2>
-                <div className="list1">
-            {projects.map(ProjectGallery)}
-            </div>
+                <div style={{display: "flex",justifyContent: "center"}}>
+                <div className="caro">
+                    <Carousel variant='dark' fade indicators="true">
+                    {projects.map(ProjectGallery)}
+                    </Carousel>
+                </div>
+                </div>
+                <br/>
             <h6>Want to add your project here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
             </div>
     );
