@@ -11,7 +11,6 @@ import DSA from "../routes/dsa.js";
 import AIML from "../routes/ai-ml.js";
 import WebDev from "../routes/webdev.js";
 import App from "../App";
-import Womentors from "../routes/womentors";
 import Gallery from "../routes/projectgallery";
 import Opportunities from "../routes/opportunities";
 import Hackathons from "../routes/hackathons";
@@ -51,9 +50,6 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/hackathons">
                     Hackathons
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/womentors">
-                    Womentors
-                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -73,9 +69,6 @@ const Navi = () => {
             </Route>
             <Route path="/ai">
               <AIML />
-            </Route>
-            <Route path="/womentors">
-              <Womentors></Womentors>
             </Route>
             <Route path="/gallery">
               <Gallery/>

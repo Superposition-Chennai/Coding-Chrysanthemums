@@ -7,7 +7,7 @@ function ProjectGallery(props){
     return(
         <Card className="Card2 item1">
         <img src={props.img} width="100%" style={{marginBottom:"2px"}}/>
-        <h5>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
+        <h5 style={{fontWeight:"600"}}>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
         <p>{props.desc}</p>
         </Card>
     )
@@ -53,7 +53,7 @@ export default function Gallery(){
             alignContent: "center",
             padding: "2%"}}
             >
-                <h2>Project Gallery</h2>
+                <h2 >Project Gallery</h2>
                 <div className="list1">
             {projects.map(ProjectGallery)}
             </div>

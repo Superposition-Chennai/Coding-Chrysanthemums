@@ -6,28 +6,28 @@ import { Link } from "react-router-dom";
 export default function Resource() {
   return (
     <>
-      <div className="list"
+      <div className="list res"
         style={{
           justifyContent: "space-evenly",
           display: "flex",
           flexWrap: "wrap",
         }}
       >
-        <Link to="/dsa">
+        <Link to="/dsa" className="link">
           <Card  className="Card">
-            <h3 style={{ fontFamily: "Poppins" }}>DSA</h3>
+          <h5 style={{ fontWeight:"900",fontFamily: "Poppins, sans-serif", textDecorationLine: "underline", textDecorationStyle: "wavy" }}>DSA</h5>
             <img src={dsa} alt="DSA" width="250px" />
           </Card>
         </Link>
-        <Link to="/webdev">
+        <Link to="/webdev" className="link">
           <Card  className="Card">
-            <h3 style={{ fontFamily: "Poppins" }}>Web Dev</h3>
+          <h5 style={{ fontWeight:"900",fontFamily: "Poppins, sans-serif", textDecorationLine: "underline", textDecorationStyle: "wavy" }}>Web Dev</h5>
             <img src={web} alt="Web" width="250px" />
           </Card>
         </Link>
-        <Link to="/ai">
-          <Card  className="Card">
-            <h3 style={{ fontFamily: "Poppins" }}>AI/ML</h3>
+        <Link to="/ai" className="link">
+          <Card  className="Card" >
+          <h5 style={{ fontWeight:"900",fontFamily: "Poppins, sans-serif", textDecorationLine: "underline", textDecorationStyle: "wavy" }}>AI/ML</h5>
             <img src={ml} alt="ML" width="250px" />
           </Card>
         </Link>
