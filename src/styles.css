@@ -5,10 +5,13 @@
   /* background-color: rgb(223, 194, 250); */
   background: url('./img/cute\ stuff.png'), linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   /* background-image: url("./img/cute\ stuff.png"); */
-  background-size: 100vw 100vh;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  min-height: 91vh;
+  min-width: 100vw;
+  background-position: center bottom;
   align-content: center;
   justify-content: center;
-  min-height: 91vh;
 }
 html {
   overflow-x: hidden;
