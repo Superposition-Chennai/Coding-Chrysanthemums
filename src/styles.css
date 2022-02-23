@@ -32,6 +32,29 @@ html {
 .link h5:hover{
   color: #c71c5e;
 }
+.masterc{
+  width: 100%;
+  background-color: #f4f0ff !important;
+  border-radius: 25px !important;
+  padding: 10px;
+  margin: 10px;
+  width: 230px;
+  height: max-content;
+  background: linear-gradient(120deg, #fff, #fdccf9);
+  border-radius: 25px !important;
+}
+.masterc .link{
+  text-decoration-style: wavy;
+  text-decoration-color: #6e4077;
+  color: #6e4077;
+}
+.masterc h5{
+  font-weight: 700 !important;
+}
+.masterc .link:hover{
+  text-decoration-style: wavy;
+  text-decoration-color: #c71c5e;
+}
 .Card1 {
   min-width: 230px;
   background-color: #f4f0ff !important;

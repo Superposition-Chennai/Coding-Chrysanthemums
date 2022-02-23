@@ -15,6 +15,7 @@ import Gallery from "../routes/projectgallery";
 import Opportunities from "../routes/opportunities";
 import Hackathons from "../routes/hackathons";
 import ResApp from "../routes/resources";
+import Communities from "../routes/communities";
 const Navi = () => {
   return (
     <>
@@ -50,6 +51,9 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/hackathons">
                     Hackathons
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/communities">
+                    Communities
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -78,6 +82,9 @@ const Navi = () => {
             </Route>
             <Route path="/hackathons">
               <Hackathons/>
+            </Route>
+            <Route path="/communities">
+              <Communities/>
             </Route>
           </Switch>
         </Router>

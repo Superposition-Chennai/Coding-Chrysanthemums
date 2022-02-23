@@ -50,7 +50,12 @@ export default function App() {
           <p>View some cool projects and submit yours too :D</p>
         </Card>
         </div>
-          
+        </div>
+        <div id="homepage">
+        <Card className="masterc Card">
+        <Link to="/communities" className="link"><h5>Communities</h5></Link>
+          <p>Check out some amazing Women-in-Tech communities to join</p>
+        </Card>
         </div>
         </div>
       
