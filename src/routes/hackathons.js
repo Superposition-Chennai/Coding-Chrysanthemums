@@ -55,7 +55,7 @@ export default function Hackathons(){
             padding: "2%"}}
             >
                 <h2 >Hackathons</h2>
-                <input type="text" placeholder="Search an opportunity" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+                <input type="text" placeholder="Search a hackathon" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <div className="list1">
                 {list.filter((val)=>{
                     if(search==""){
