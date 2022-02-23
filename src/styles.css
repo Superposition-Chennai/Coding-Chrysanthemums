@@ -232,6 +232,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
 }
   .hack{
     height: fit-content;
+    padding-top: 5%;
     justify-content: center;
   }
   .Card2 {
