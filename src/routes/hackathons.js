@@ -1,13 +1,16 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faG, faLink, faPenClip } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Badge, Card,  } from "@material-ui/core";
+import {  Card,  } from "@material-ui/core";
+import { Badge } from '@mui/material';
 import { useState } from "react";
+import { withStyles } from "@material-ui/core";
+  
 
 function Hackathon(props){
     return(
         <Card className="hack item1">
-            <Badge badgeContent={props.type} color="secondary">
+            <Badge badgeContent={props.type} sx={{"& .MuiBadge-badge":{backgroundColor:"#db608b", color:"#fff"}}}>
             <img src={props.img} width="100px" style={{margin:"5px"}}/></Badge>
             <h5>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
             <h6>{props.date}</h6>

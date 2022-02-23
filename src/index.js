@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
 import "font-awesome/css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navi from "./components/header";
 import { BrowserRouter } from "react-router-dom";
 import { StrictMode } from "react";

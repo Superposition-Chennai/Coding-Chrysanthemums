@@ -2,17 +2,17 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Card, CardActions, Typography } from "@material-ui/core";
-import { keys } from "@material-ui/core/styles/createBreakpoints";
+import { Badge } from "@mui/material";
 import { useState } from "react";
 
 function Opportunity(props){
     return(
-        <Card className="Card2 item1">
-            <h5>{props.name} </h5>
-            <Typography variant="subtitle1">{props.type}</Typography>
-            <Typography variant="subtitle2">{props.time}</Typography>
-            <CardActions>
+        <Card className="Card2 item1 opp">
+            <h5>{props.name} </h5><br/>
+            <Badge badgeContent={props.type} sx={{".MuiBadge-badge":{backgroundColor:"#f06c91", color:"#fff"}}}className="opptype"></Badge>
+            <CardActions className="ca">
                 <Button size="small" href={props.link} className="lm">Learn More </Button>
+                <Button size="small" className="lm">{props.time}</Button>
             </CardActions>
         </Card>
     )
