@@ -1,19 +1,21 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  Card,  } from "@material-ui/core";
-import { Badge } from '@mui/material';
+import {  Card, CardActions,  } from "@material-ui/core";
+import { Badge, Button, CardActionArea } from '@mui/material';
 import { useState } from "react";
 import { withStyles } from "@material-ui/core";
   
 
 function Hackathon(props){
     return(
-        <Card className="hack item1">
+        <Card className="hack">
             <Badge badgeContent={props.type} sx={{"& .MuiBadge-badge":{backgroundColor:"#db608b", color:"#fff"}}}>
             <img src={props.img} width="100px" style={{margin:"5px"}}/></Badge>
             <h5>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
-            <h6>{props.date}</h6>
+            <CardActionArea className="ca">
+            <Button size="small" className="lm" color="secondary">{props.date}</Button>
+            </CardActionArea>
             
         </Card>
     )
@@ -42,7 +44,8 @@ export default function Hackathons(){
             link:"https://www.creatica.io/",
             date:"April 29 - May 1",
             type:"Diversity"
-        }
+        },
+        
     ]
     return(
         <div className="App" style={{
