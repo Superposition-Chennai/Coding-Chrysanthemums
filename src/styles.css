@@ -204,7 +204,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
   text-decoration-line: underline ;
   text-decoration-style: wavy ;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .App{
     background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   }
@@ -217,15 +217,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
     justify-content: center;
   }
   .list1 {
-    width: 100vw;
+    /* width: 100vw; */
     height: max-content;
     flex-direction: row;
     justify-content: center;
   }
-  .list1 img{
-    margin: 1%;
-  }
-  
 .item1 {
   padding: 15px;
   margin: 1%;
@@ -238,5 +234,18 @@ background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBo
   .Card2 {
     height: fit-content;
     justify-content: center;
+  }
+  .caro{
+    width: 90%;
+    height: 100%;
+  }
+  .caroitem{
+    width: 100%;
+  }
+  .carocard{
+    width: 100%;
+  }
+  .carocard img{
+    width: 100%;
   }
 }

@@ -39,7 +39,7 @@ export default function Gallery(){
             desc:"A fun game to recognise the LQBT+ pride flags"
         },
         {
-            name:"#UofCC A Covid Consciousness App",
+            name:"Universe of Covid Consciousness",
             link:"https://devpost.com/software/uofcc-the-universe-of-covid-consciousness-app",
             img:"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/369/342/datas/medium.png",
             desc:"An app to engage young people to take COVID seriously."
