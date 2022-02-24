@@ -22,10 +22,10 @@ export default function Communities(){
     const [search, setSearch] = useState('');
     let list = [
         {
-            name:"Major League Hacking",
-            desc:"Major League Hacking is a company that operates a league for student hackathons.",
-            link:"https://mlh.io",
-            img:"https://dnh0aphdpud22.cloudfront.net/social_avatars/48c4f7b4762262d726459ead.jpg"
+            name:"Women Who Code",
+            desc:"WWCode is an international nonprofit dedicated to inspiring women to excel in technology careers.",
+            link:"https://womenwhocode.com",
+            img:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAEAAdwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAABwYFAgQD/8QAMRAAAQMDAgQFAgUFAAAAAAAAAQACAwQFEQYSExQhMQciQVFxYcEVMnKBoRY2UpGS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8AuCIiAiIgIiICIiAiIgIiICIiAiIgIiICzepKW5PrI47ZJLG25R8pNK055fbl4kA9PLxG59yxaRY/xE1a/TlHDBQhhr6nOwvGRGwd3Y9T6AfPthB5bzlQKevvkVTHS1MjuYp4tx4W0BsYcG9dhIkcfq5uegXh8tyjiY63NqzTQ1z6mnZK15fJTMiAdH5uo3Pc/bu9MY6YWCtE+s7lPBdY6m7zUgnbvkZM4RkbgD5AcEd84GBgrV+Jus6q11TbRaJODPsD55wAS0Hs1vscdc/UYQfVWG6PhjbcTJG43MyuJhlkY2N9MXBpEZBIa87e/doK/WubeIqS+y0YqKinkcImwgFroxwI8SxZ643E7m59MjqCHT2G/as07U01TVVdfidoljjrZXSMmZ8OJx+2CFuNeX6St0FQXa11NRSmonYcwzOY5vR25pLSOxGP2QaXUsVc19PNbeIXzB1HIGnpG2TGJce7CP8ARK5UcV5lpRUSufHVMq4KSPeC5rmxvw6UtBHR7i49+wapZSX3U9LB+IwXS5up2ycIyyzuljD8Z2kOJGcEKoWPVbtQ6MutQ7ENwpKaQS8JxGDsJa9vqM4PwQVR721LapovZnkoeZqOKYGSBhk8nDLmgk7McTuS3OM9cLu6cEvJSbhOKfjO5UVG7iCLpjdu83fOM9cYyodaqrVN3qeWttyu9ROGF5Y24SA7RgZ6vHuFZNA090pdNwxXzmedEkhdzM3EfguOPNk+n1QaJERQEREBERAUW8YC/wDq2MOztFGzb/0/srSsR4l6Snv9NDW21odXUoLeGSBxWHrgE+oPb5KQaDSQiGlrQIMbOTixj9Iz/Ki/iD/e914+Q3itz+nht+y+yyTazozBZoI7rDSmYNczlnDY0u82HbctHfsVqPFDR1ZcKsXi0wmd5YGVEDB5jjs4D16dCO/QfVUePGvhins+Mbw6Xbj/ABw3P2XCqdx8IaPOdv4m7Z8ef75XOFs1Xqaqpaappq6QwMEUclVEY2RN9ySB7de5OPVbfXdidbvD+gtVvhlqOXnZnhxFznHa4udge5Of3QZ/TjY3+FepONjAqgR9HbYsfzhfj4cl4t+qQPyfhjt3zh+PuuHTUGpJaJ1qp6C4mlllEzoRTOa1z8AAkkewHc49VS9OaVm09ou7ioaHXGsppDIxnm24Y4NYMdz1Pb1KCV6fZd5K8t0/zPN8I55dxa7Z0z19uyuui23FmmaJt543PDfxeO7L/wA7sZPxhROzDUdlqjV2yir4Jywx7+Tc7ynBIwWn2CsGi7ndKqw0kt4imfVyzSNeXxCMtAd0JbgeiDToiKAiIgIiICIiAiIgIiICIiAiIgIiICIiD//Z"
         },
         {
             name:"Superposition",
@@ -38,6 +38,18 @@ export default function Communities(){
             desc:"Helping young women explore their passions in STEM through exploration, education and inspiration.",
             link:"https://girlsinstem.carrd.co/",
             img:"https://girlsinstemchapters.carrd.co/assets/images/image01.jpg?v=9e91b120"
+        },
+        {
+            img:"https://media-exp1.licdn.com/dms/image/C560BAQFp1nxqCZ3pBA/company-logo_200_200/0/1587356018352?e=1653523200&v=beta&t=9-Ur6JYfwI6OgFLzO5wGsJ8gO2Lb2RlqUrMl47HZLC4",
+            name:"Girls in Tech, Inc.",
+            desc:"Girls in Tech is a nonprofit organization dedicated to eliminating the gender gap in tech.",
+            link:"https://girlsintech.org/"
+        },
+        {
+            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQFXsxKx8RHwug/company-logo_200_200/0/1640097726558?e=1653523200&v=beta&t=keMcvJ1bIuUBScDzyz7Gb8w-lXKyKUFhQkJtvYUTkFI",
+            name:"Rewriting the Code",
+            desc:"Empowering College Women in Tech. 15,000+ members and growing!",
+            link:"https://teamrtc.org/"
         }
     ]
     return(

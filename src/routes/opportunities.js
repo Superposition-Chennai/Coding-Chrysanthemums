@@ -38,6 +38,47 @@ export default function Opportunities(){
             type:"Student Ambassador",
             time:"All Year",
             link:"https://education.github.com/experts"
+        },
+        {
+            name:"Grace Hopper Conference",
+            link:"https://ghc.anitab.org/",
+            type:"Scholarship",
+            time:"Feb"
+        },
+        {
+            name:"Generation Google Scholarship (APAC)",
+            link:"https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship-apac/",
+            type:"Scholarship",
+            time:"March"
+        },
+        {
+            name:"LinkedIN CoachIN",
+            type:"Mentorship",
+            time:"March",
+            link:"https://coachin2021.splashthat.com/"
+        },
+        {
+            name:"Code in Place by Stanford",
+            type:"Mentorship",
+            time:"March",
+            link:"https://codeinplace.stanford.edu/"
+        },
+        {
+            name:"Google Summer of Code",
+            type:"Internship",
+            time:"April",
+            link:"https://summerofcode.withgoogle.com/",
+        },
+        {
+            name:"Code Jam to I/O for Women",
+            link:"https://codingcompetitions.withgoogle.com/codejamio/",
+            time:"April",
+            type:"Scholarship"
+        },{
+            name:"GDSC Applications (India)",
+            type:"Developer Community",
+            time:"April",
+            link:"https://developers.google.com/community/gdsc/leads"
         }
     ]
     return(
