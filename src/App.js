@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App" style={{
+    <div className="App home" style={{
       fontFamily: "Poppins",
       width: "100%",
-      alignContent: "center",
-      padding: "2%"}}>
+      alignContent: "center",}}>
+        <div className="masterhome">
         <div>
           <b>
             <h1 style={{ fontFamily: "Poppins, sans-serif" }}>
@@ -57,6 +57,8 @@ export default function App() {
           <p>Check out some amazing Women-in-Tech communities to join</p>
         </Card>
         </div>
+        </div>
+        <footer id="foot"><p>Made with ❤️ by <span style={{textDecorationLine:"underline",textDecorationStyle:"wavy"}}>Rakshaa Viswanathan</span></p></footer>
         </div>
       
   );

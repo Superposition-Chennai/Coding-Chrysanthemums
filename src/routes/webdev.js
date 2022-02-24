@@ -32,7 +32,7 @@ export default function WebDev() {
         >
           <h2>Web Dev Resources</h2>
           <img src={title} alt="title" width="200px" />
-          <input type="text" placeholder="Search a resource" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+          <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
             {resources.filter((val)=>{
               if(search==""){
