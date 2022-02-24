@@ -89,6 +89,8 @@ export default function Opportunities(){
             padding: "2%"}}
             >
                 <h2 >Opportunities</h2>
+                <h4>Check out upcoming scholarships, fellowships and more</h4>
+                <h6>Want to add an opportunity here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search an opportunity 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <div className="list1">
                 {list.filter((val)=>{
@@ -107,7 +109,6 @@ export default function Opportunities(){
                     
                 }).map(Opportunity)}
                 </div>
-          <h6>Want to add an opportunity here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 
         </div>
     );

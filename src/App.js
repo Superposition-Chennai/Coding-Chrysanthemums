@@ -54,7 +54,7 @@ export default function App() {
         <div id="homepage">
         <Card className="masterc Card">
         <Link to="/communities" className="link"><h5>Communities</h5></Link>
-          <p>Check out some amazing Women-in-Tech communities to join</p>
+          <p>Check out some amazing Womxn-in-Tech communities to join</p>
         </Card>
         </div>
         </div>

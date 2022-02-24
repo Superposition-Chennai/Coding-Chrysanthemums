@@ -16,12 +16,13 @@ import Opportunities from "../routes/opportunities";
 import Hackathons from "../routes/hackathons";
 import ResApp from "../routes/resources";
 import Communities from "../routes/communities";
+import WallofFame from "../routes/walloffame";
 const Navi = () => {
   return (
     <>
       <div>
         <Router>
-          <Navbar variant="dark" bg="dark" expand="lg" sticky="top">
+          <Navbar variant="dark" bg="dark" expand="lg" sticky="top" className="navibar">
             <Container>
               <Navbar.Brand as={NavLink} to="/">
                 <img
@@ -54,6 +55,9 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/communities">
                     Communities
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/wof">
+                    Wall of Fame
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -85,6 +89,9 @@ const Navi = () => {
             </Route>
             <Route path="/communities">
               <Communities/>
+            </Route>
+            <Route path="/wof">
+              <WallofFame/>
             </Route>
           </Switch>
         </Router>

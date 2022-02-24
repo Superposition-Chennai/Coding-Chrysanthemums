@@ -60,6 +60,8 @@ export default function Gallery(){
             padding: "2%"}}
             >
                 <h2 >Project Gallery</h2>
+                <h4>Cool projects by Womxn in Tech</h4>
+                <h6>Want to add your project here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <div style={{display: "flex",justifyContent: "center"}}>
                 <div className="caro">
                     <Carousel variant='dark' fade indicators="true">
@@ -68,7 +70,6 @@ export default function Gallery(){
                 </div>
                 </div>
                 <br/>
-            <h6>Want to add your project here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
             </div>
     );
 }

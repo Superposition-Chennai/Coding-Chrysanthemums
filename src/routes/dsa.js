@@ -33,6 +33,7 @@ export default function DSA() {
           }}
         >
           <h2>DSA Resources</h2>
+          <h4>Getting started with Data Structures and Algorithms</h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
@@ -48,7 +49,6 @@ export default function DSA() {
               }  
             }).map(CardRes)}
           </div>
-          <h6>Want to add a resource here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
         </div>
       </div>
     </>

@@ -55,6 +55,8 @@ export default function Hackathons(){
             padding: "2%"}}
             >
                 <h2 >Hackathons</h2>
+                <h4>Check out some Gender Focused Hackathons</h4>
+                <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <div className="list1">
                 {list.filter((val)=>{
@@ -73,7 +75,6 @@ export default function Hackathons(){
                     
                 }).map(Hackathon)}
                 </div>
-                <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
         </div>
     );
 }

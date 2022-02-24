@@ -60,6 +60,8 @@ export default function Communities(){
             padding: "2%"}}
             >
                 <h2 >Communities</h2>
+                <h4>Check out some amazing Womxn-in-Tech communities to join</h4>
+                <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search a community 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <div className="list1">
                 {list.filter((val)=>{
@@ -75,7 +77,7 @@ export default function Communities(){
                     
                 }).map(Community)}
                 </div>
-          <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+          
                 
         </div>
     );
