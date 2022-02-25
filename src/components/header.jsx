@@ -22,7 +22,7 @@ const Navi = () => {
     <>
       <div>
         <Router>
-          <Navbar variant="dark" bg="dark" expand="lg" sticky="top" className="navibar">
+          <Navbar variant="light" bg="light" expand="lg" sticky="top" className="navibar">
             <Container>
               <Navbar.Brand as={NavLink} to="/">
                 <img

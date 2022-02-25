@@ -242,7 +242,7 @@ a:visited:hover {
   color: #000 !important;
 }
 .navibar{
-  background-color: #280330 !important;
+  /* background-color: #280330 !important; */
 }
 #basic-navbar-nav{
   font-family: "Poppins" !important;
