@@ -1,34 +1,36 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  Card, CardActions,  } from "@material-ui/core";
+import {  Card  } from "@material-ui/core";
 import { Badge, Button, CardActionArea } from '@mui/material';
 import { useState, useEffect } from "react";
   
 
 function Hackathon(props){
-    return(
-        <Card className="hack">
-            <Badge badgeContent={props.type} sx={{"& .MuiBadge-badge":{backgroundColor:"#db608b", color:"#fff"}}}>
-            <img src={props.img} width="100px" style={{margin:"5px"}}/></Badge>
-            <h5>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
-            <CardActionArea className="ca">
-            <Button size="small" className="lm" color="secondary">{props.date}</Button>
-            </CardActionArea>
-            
-        </Card>
-    )
-}
-function MLHHack(props){
-    return(
-        <Card className="hack">
-            <Badge badgeContent={"MLH"} sx={{"& .MuiBadge-badge":{backgroundColor:"#9943ab", color:"#fff"}}}><img src={props.imageUrl} width="100px" style={{margin:"5px"}}/></Badge>
-            <h5>{props.name} <a href={props.url} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
-            <CardActionArea className="ca">
-            <Button size="small" className="lm" color="secondary">{props.location}</Button>
-            </CardActionArea> 
-        </Card>
-    )
+    if(props.url){
+        return(
+            <Card className="hack">
+                <Badge badgeContent={"MLH"} sx={{"& .MuiBadge-badge":{backgroundColor:"#9943ab", color:"#fff"}}}><img src={props.imageUrl} width="100px" style={{margin:"5px"}}/></Badge>
+                <h5>{props.name} <a href={props.url} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
+                <CardActionArea className="ca">
+                <Button size="small" className="lm" color="secondary">{props.location}</Button>
+                </CardActionArea> 
+            </Card>
+        )
+    }
+    else{
+        return(
+            <Card className="hack">
+                <Badge badgeContent={props.type} sx={{"& .MuiBadge-badge":{backgroundColor:"#db608b", color:"#fff"}}}>
+                <img src={props.img} width="100px" style={{margin:"5px"}}/></Badge>
+                <h5>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
+                <CardActionArea className="ca">
+                <Button size="small" className="lm" color="secondary">{props.date}</Button>
+                </CardActionArea>
+                
+            </Card>
+        )
+    }
 }
 export default function Hackathons(){
     const [search, setSearch] = useState('');
@@ -69,20 +71,22 @@ export default function Hackathons(){
             type:"Diversity"
         },
     ];
-    const mlh_latest = mlh.filter((val)=>{
+    let mlh_latest = mlh.filter((val)=>{
         var date = new Date();
         var valdate = new Date(val.startDate);
         if(valdate >= date){
             return val;
         }  
     });
-    const present = list.filter((val)=>{
+    let present = list.filter((val)=>{
         var date = new Date();
         var valdate = new Date(val.startDate);
         if(valdate >= date){
             return val;
         }  
     });
+    present = present.concat(mlh_latest);
+    present.sort((a,b)=>{return (new Date(a.startDate) - new Date(b.startDate))});
     return(
         <div className="App" style={{
             fontFamily: "Poppins",
@@ -99,28 +103,27 @@ export default function Hackathons(){
                     if(search==""){
                         return val
                     }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
-                        return val
+                    if(val.location){
+                        if(val.location.toLowerCase().includes(search.toLowerCase())){
+                            return val;
+                        }
+                        else if(val.name.toLowerCase().includes(search.toLowerCase())){
+                            return val;
+                        }
                     }
-                    else if(val.date.toLowerCase().includes(search.toLowerCase())){
-                        return val
-                    }
-                    else if(val.type.toLowerCase().includes(search.toLowerCase())){
-                        return val
+                    else{
+                        if(val.name.toLowerCase().includes(search.toLowerCase())){
+                            return val
+                        }
+                        else if(val.date.toLowerCase().includes(search.toLowerCase())){
+                            return val
+                        }
+                        else if(val.type.toLowerCase().includes(search.toLowerCase())){
+                            return val
+                        }
                     }
                     
                 }).map(Hackathon)}
-                {mlh_latest.filter((val)=>{
-                    if(search==""){
-                        return val;
-                    }
-                    else if(val.location.toLowerCase().includes(search.toLowerCase())){
-                        return val;
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
-                        return val;
-                    }
-                }).map(MLHHack)}
                 </div>
                 <br/>
         </div>
