@@ -9,7 +9,7 @@ export default function CardRes(s){
                     <h4>{s.title}</h4>
                     <p>
                       {s.name}{" "}
-                      <a href={s.link}>
+                      <a href={s.link} target="_blank">
                         <FontAwesomeIcon icon={faLink} />
                       </a>
                     </p>

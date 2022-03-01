@@ -12,7 +12,7 @@ function Community(props){
             {/* <img src={props.img}/> */}
             <p>{props.desc}</p>
             <CardActions className="ca">
-                <Button size="small" href={props.link} className="lm">Learn More </Button>
+                <Button size="small" href={props.link} target="_blank" className="lm">Learn More </Button>
             </CardActions>
         </Card>
     )

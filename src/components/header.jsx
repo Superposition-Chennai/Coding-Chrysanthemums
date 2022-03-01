@@ -17,6 +17,7 @@ import Hackathons from "../routes/hackathons";
 import ResApp from "../routes/resources";
 import Communities from "../routes/communities";
 import WallofFame from "../routes/walloffame";
+import Inspiration from "../routes/inspiration";
 const Navi = () => {
   return (
     <>
@@ -58,6 +59,9 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/wof">
                     Wall of Fame
                   </Nav.Link>
+                  <Nav.Link as={NavLink} to="/inspiration">
+                    Get Inspired
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -92,6 +96,9 @@ const Navi = () => {
             </Route>
             <Route path="/wof">
               <WallofFame/>
+            </Route>
+            <Route path="/inspiration">
+              <Inspiration/>
             </Route>
           </Switch>
         </Router>

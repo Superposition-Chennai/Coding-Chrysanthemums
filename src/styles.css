@@ -86,6 +86,14 @@ html {
   padding-top: 2%;
   margin: 0.9%;
 }
+.person {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5);
+  text-decoration: none;
+  border-radius: 10px !important;
+  width: 80%;
+  padding: 2%;
+  margin: 1%;
+}
 .item {
   width: 300px;
   padding: 1%;
@@ -203,6 +211,13 @@ a:visited:hover {
   text-decoration-line: underline ;
   text-decoration-style: wavy ;
 }
+
+.person h5{
+  font-weight: 500 !important;
+  color: #000;
+  text-decoration-line: underline ;
+  text-decoration-style: wavy ;
+}
 #foot{
   width:100vw;
   position : fixed;
@@ -271,6 +286,12 @@ a:visited:hover {
     height: fit-content;
     padding: 5%;
     width: 230px;
+    justify-content: center;
+  }
+  .person{
+    height: fit-content;
+    padding: 5%;
+    /* width: 230px; */
     justify-content: center;
   }
   .Card2 {
