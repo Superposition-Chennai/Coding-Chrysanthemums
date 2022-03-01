@@ -2,6 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Card, CardActions, Typography } from "@material-ui/core";
+import { OpenInNew } from "@mui/icons-material";
 import { Avatar, Badge } from "@mui/material";
 import { useState } from "react";
 
@@ -12,7 +13,7 @@ function Community(props){
             {/* <img src={props.img}/> */}
             <p>{props.desc}</p>
             <CardActions className="ca">
-                <Button size="small" href={props.link} target="_blank" className="lm">Learn More </Button>
+                <Button size="small" href={props.link} target="_blank" className="lm">Learn More <OpenInNew/> </Button>
             </CardActions>
         </Card>
     )

@@ -108,10 +108,10 @@ html {
 }
 .caroitem{
   width: 400px;
-  height: 380px;
+  height: 450px;
 }
 .carocard{
-  height: 380px;
+  height: 450px;
   padding: 5%;
   background-color: #0000008e !important;
   border-radius: 20px !important;

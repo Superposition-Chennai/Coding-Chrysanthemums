@@ -1,9 +1,10 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card, Typography } from "@material-ui/core";
+import { Card } from "@material-ui/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel, CarouselItem } from "react-bootstrap";
-
+import { CardActionArea, Chip } from "@mui/material";
+import { Laptop } from "@mui/icons-material";
 function ProjectGallery(props){
     return(
         <CarouselItem className="caroitem" >
@@ -12,6 +13,13 @@ function ProjectGallery(props){
         <Carousel.Caption>
         <h5 style={{fontWeight:"600", color:"#fff"}}>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
         <p style={{flexWrap:"wrap", color:"#fff"}}>{props.desc}</p>
+        <CardActionArea>
+            {props.tags.map((e)=>{
+                return(
+                    <Chip icon={<Laptop/>} color="secondary" size="small" sx={{margin:"2px", bgcolor:"#f5b8c4", color:"#000"}} label={e}></Chip>
+                )
+            })}
+        </CardActionArea>
         </Carousel.Caption>
         </Card>
         </CarouselItem>
@@ -25,30 +33,35 @@ export default function Gallery(){
             name:"SafeSpaceBot",
             link:"https://devpost.com/software/safespacebot",
             desc:"A discord bot to prevent gender-based verbal abuse on servers",
+            tags:["Python"]
         },
         {
             img: "https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/393/540/datas/medium.png",
             name:"Tinthon",
             link:"https://devpost.com/software/tinthon",
-            desc:"One stop app for Hackathons"
+            desc:"One stop app for Hackathons",
+            tags:["Figma", "React Native"]
         },
         {
             link:"https://devpost.com/software/fun-with-flags-a1nm0w",
             name:"Fun with Flags",
             img:"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/580/933/datas/medium.gif",
-            desc:"A fun game to recognise the LQBT+ pride flags"
+            desc:"A fun game to recognise the LQBT+ pride flags",
+            tags:["React", "JavaScript", "Material UI"]
         },
         {
             name:"Universe of Covid Consciousness",
             link:"https://devpost.com/software/uofcc-the-universe-of-covid-consciousness-app",
             img:"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/369/342/datas/medium.png",
-            desc:"An app to engage young people to take COVID seriously."
+            desc:"An app to engage young people to take COVID seriously.",
+            tags:["Figma", "HTML", "CSS", "JavaScript"]
         },
         {
             name:"enviMed",
             link:"https://devpost.com/software/envimed",
             img:"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_thumbnail_photos/001/568/690/datas/medium.png",
-            desc:"Learn about Bio-medical waste"   
+            desc:"Learn about Bio-medical waste",
+            tags:["React", "Material UI", "JavaScript", "Google Teachable Machine"]
         }
     ]
     return(

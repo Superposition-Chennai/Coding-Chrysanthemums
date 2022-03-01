@@ -1,7 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card } from "@material-ui/core";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "./cardres";
 import { useState } from "react";

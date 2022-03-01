@@ -1,7 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { LibraryBooks } from "@mui/icons-material";
 export default function CardRes(s){
         return(
             <div className="item">
@@ -10,7 +9,7 @@ export default function CardRes(s){
                     <p>
                       {s.name}{" "}
                       <a href={s.link} target="_blank">
-                        <FontAwesomeIcon icon={faLink} />
+                        <LibraryBooks/>
                       </a>
                     </p>
                   </Card>

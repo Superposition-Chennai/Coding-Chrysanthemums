@@ -1,7 +1,7 @@
-import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Badge, Button, Card, CardActionArea,  CircularProgress, LinearProgress } from "@mui/material";
+import { OpenInNew } from "@mui/icons-material";
+import { Avatar, Button, Card, CardActionArea,  CircularProgress, LinearProgress } from "@mui/material";
 import { useEffect, useState } from "react";
+
 
 function People(props){
     return(
@@ -12,7 +12,7 @@ function People(props){
             </div>
             <p>{props.details}</p>
             <CardActionArea className="ca">
-            <Button size="small" className="lm" color="secondary" href={props.website} target="_blank">Learn More</Button>
+            <Button size="small" className="lm" color="secondary" href={props.website} target="_blank">Learn More<OpenInNew/></Button>
             </CardActionArea> 
         </Card>
     )
