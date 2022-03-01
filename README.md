@@ -1,6 +1,12 @@
-# Coding Chrysanthemums
+# Coding Chrysanthemums ✨
 
-A beginner-friendly project that lists resources for learning AI, Web Dev and DSA.
-The Website is made with React. Please contribute books, websites, open-source projects, courses, or any other material that you found useful.
+## A one-stop shop for underrepresented genders in tech 💜
 
-Created with CodeSandbox
+- **Resources**: Find resources that help you start out with Coding
+- **Opportunities**: Find Scholarships, Fellowships, Internships and more
+- **Hackathons**: Find Diversity themed Hackathons to apply your learning
+- **Project Gallery**: View some cool projects and submit yours too :D
+- **Communities**: Check out some amazing Womxn-in-Tech communities to join
+- **Wall of Fame**: Highlight the achievements of womxn you know
+
+Made with ❤️ and 💻 by Rakshaa Viswanathan
