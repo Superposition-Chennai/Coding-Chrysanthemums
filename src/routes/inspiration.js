@@ -43,7 +43,7 @@ export default function Inspiration(){
                 <input type="text" placeholder="Search a person 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <br/>
                 <div className="list1">
-                <LinearProgress color="secondary"/>
+                <CircularProgress color="secondary"/>
                 </div>
             </div>
         )
