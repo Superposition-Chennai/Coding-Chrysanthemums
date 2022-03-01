@@ -76,24 +76,10 @@ export default function Hackathons(){
             return val;
         }  
     });
-    const mlh_past = mlh.filter((val)=>{
-        var date = new Date();
-        var valdate = new Date(val.startDate);
-        if(valdate < date){
-            return val;
-        }  
-    });
     const present = list.filter((val)=>{
         var date = new Date();
         var valdate = new Date(val.startDate);
         if(valdate >= date){
-            return val;
-        }  
-    });
-    const past = list.filter((val)=>{
-        var date = new Date();
-        var valdate = new Date(val.startDate);
-        if(valdate < date){
             return val;
         }  
     });
@@ -137,35 +123,6 @@ export default function Hackathons(){
                 }).map(MLHHack)}
                 </div>
                 <br/>
-                <h4>Past Hackathons</h4>
-                <div className="list1">
-                {past.filter((val)=>{
-                    if(search==""){
-                        return val
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
-                        return val
-                    }
-                    else if(val.date.toLowerCase().includes(search.toLowerCase())){
-                        return val
-                    }
-                    else if(val.type.toLowerCase().includes(search.toLowerCase())){
-                        return val
-                    }
-                    
-                }).map(Hackathon)}
-                {mlh_past.filter((val)=>{
-                    if(search==""){
-                        return val;
-                    }
-                    else if(val.location.toLowerCase().includes(search.toLowerCase())){
-                        return val;
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
-                        return val;
-                    }
-                }).map(MLHHack)}
-                </div>
         </div>
     );
 }
