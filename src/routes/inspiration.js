@@ -63,9 +63,6 @@ export default function Inspiration(){
                     if(search==""){
                         return val
                     }
-                    else if(val.tags.toLowerCase().includes(search.toLowerCase())){
-                        return val;
-                    }
                     else if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val;
                     }
