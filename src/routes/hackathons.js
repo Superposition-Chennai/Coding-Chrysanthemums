@@ -69,6 +69,14 @@ export default function Hackathons(){
             startDate:"2022-02-25",
             type:"Diversity"
         },
+        {
+            name:"TIQC x Code Resolve x Girls Who Code Hacks",
+            img:"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/849/278/datas/medium.png",
+            link:"https://tqic-cr-gwc-hacks.devpost.com/",
+            date:"Mar4th",
+            startDate:"2022-03-04",
+            type:"Diversity"
+        }
     ];
     let mlh_latest = mlh.filter((val)=>{
         var date = new Date();
