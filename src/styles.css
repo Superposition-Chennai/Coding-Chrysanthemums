@@ -270,6 +270,7 @@ a:visited:hover {
   .hack{
     height: fit-content;
     padding-top: 5%;
+    width: 230px;
     justify-content: center;
   }
   .Card2 {
