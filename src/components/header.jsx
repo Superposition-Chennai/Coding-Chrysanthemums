@@ -18,6 +18,7 @@ import ResApp from "../routes/resources";
 import Communities from "../routes/communities";
 import WallofFame from "../routes/walloffame";
 import Inspiration from "../routes/inspiration";
+import Quiz from "../routes/quiz";
 const Navi = () => {
   return (
     <>
@@ -56,11 +57,11 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/communities">
                     Communities
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/wof">
-                    Wall of Fame
-                  </Nav.Link>
                   <Nav.Link as={NavLink} to="/inspiration">
                     Get Inspired
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/wof">
+                    Wall of Fame
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -99,6 +100,9 @@ const Navi = () => {
             </Route>
             <Route path="/inspiration">
               <Inspiration/>
+            </Route>
+            <Route path="/quiz">
+              <Quiz/>
             </Route>
           </Switch>
         </Router>

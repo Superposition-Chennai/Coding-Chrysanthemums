@@ -261,6 +261,9 @@ a:visited:hover {
   font-family: "Poppins" !important;
 }
 @media (max-width: 600px) {
+  .celeb{
+    width: 100%;
+  }
   .App{
     background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
   }
