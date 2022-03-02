@@ -2,6 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  Card  } from "@material-ui/core";
+import { OpenInNew } from "@mui/icons-material";
 import { Badge, Button, CardActionArea, CircularProgress, LinearProgress } from '@mui/material';
 import { useState, useEffect } from "react";
   
@@ -11,7 +12,7 @@ function Hackathon(props){
         return(
             <Card className="hack">
                 <Badge badgeContent={"MLH"} sx={{"& .MuiBadge-badge":{backgroundColor:"#9943ab", color:"#fff"}}}><img src={props.imageUrl} width="100px" style={{margin:"5px"}}/></Badge>
-                <h5>{props.name} <a href={props.url} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
+                <h5>{props.name} <a href={props.url} target="_blank"><OpenInNew/></a></h5>
                 <CardActionArea className="ca">
                 <Button size="small" className="lm" color="secondary">{props.location}</Button>
                 </CardActionArea> 
@@ -23,7 +24,7 @@ function Hackathon(props){
             <Card className="hack">
                 <Badge badgeContent={props.type} sx={{"& .MuiBadge-badge":{backgroundColor:"#db608b", color:"#fff"}}}>
                 <img src={props.img} width="100px" style={{margin:"5px"}}/></Badge>
-                <h5>{props.name} <a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}/></a></h5>
+                <h5>{props.name} <a href={props.link} target="_blank"><OpenInNew/></a></h5>
                 <CardActionArea className="ca">
                 <Button size="small" className="lm" color="secondary">{props.date}</Button>
                 </CardActionArea>

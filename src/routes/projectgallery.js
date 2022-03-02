@@ -1,17 +1,17 @@
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import LogoDevIcon from '@mui/icons-material/LogoDev';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import { CardActionArea, Chip } from "@mui/material";
-import { Laptop } from "@mui/icons-material";
+import { Hub, Language, Laptop } from "@mui/icons-material";
 function ProjectGallery(props){
     return(
         <CarouselItem className="caroitem" >
         <Card className="carocard">
         <img src={props.img} width="300px"/>
         <Carousel.Caption>
-        <h5 style={{fontWeight:"600", color:"#fff"}}>{props.name}{" "}<a href={props.link} target="_blank"><FontAwesomeIcon icon={faLink}></FontAwesomeIcon></a></h5>
+        <h5 style={{fontWeight:"600", color:"#fff"}}>{props.name}{" "}<a href={props.link} target="_blank"><Language sx={{color:"#ffccd9"}}/></a></h5>
         <p style={{flexWrap:"wrap", color:"#fff"}}>{props.desc}</p>
         <CardActionArea>
             {props.tags.map((e)=>{
