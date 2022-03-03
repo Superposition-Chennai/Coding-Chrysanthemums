@@ -14,7 +14,7 @@ export default function BottomNav(){
             <RWebShare
               data={{
                 text: "Web Share - Coding Chrysanthemums",
-                url: window.location.href,
+                url: window.location,
                 title: "Coding Chrysanthemums",
               }}
               onClick={() => console.log("shared successfully!")}
@@ -26,7 +26,7 @@ export default function BottomNav(){
       };
       function Copy(){
           return(
-              <IconButton onClick={() =>  navigator.clipboard.writeText(window.location.href)}>
+              <IconButton onClick={() =>  navigator.clipboard.writeText(window.location)}>
               <FileCopyIcon/>
               </IconButton>
           )
@@ -38,10 +38,10 @@ export default function BottomNav(){
       
     return(
         <>
-            <SpeedDial ariaLabel="SpeedDial basic example" FabProps={{
+            <SpeedDial ariaLabel="SpeedDial basic example"  FabProps={{
                 color: "secondary",
             }}
-        sx={{ position: 'absolute', bottom: 16, right: 16,}}
+        sx={{ position: "fixed", bottom: 16, right: 16,}}
         icon={<SpeedDialIcon  />}>
             {actions.map((action) => (
                     <SpeedDialAction
