@@ -3,9 +3,7 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import ShareIcon from '@mui/icons-material/Share';
-import EngineeringIcon from '@mui/icons-material/Engineering';
 import { RWebShare } from 'react-web-share';
-import { Bookmark } from 'react-bookmark';
 import { IconButton } from '@mui/material';
 export default function BottomNav(){
     function WebShare(){
@@ -41,7 +39,7 @@ export default function BottomNav(){
             <SpeedDial ariaLabel="SpeedDial basic example"  FabProps={{
                 color: "secondary",
             }}
-        sx={{ position: "fixed", bottom: 16, right: 16,}}
+        sx={{ position: "fixed", bottom: 16, right: 16, }}
         icon={<SpeedDialIcon  />}>
             {actions.map((action) => (
                     <SpeedDialAction
