@@ -3,8 +3,11 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
 import ShareIcon from '@mui/icons-material/Share';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { RWebShare } from 'react-web-share';
-import { IconButton } from '@mui/material';
+import {  IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import InterestsTwoToneIcon from '@mui/icons-material/InterestsTwoTone';
 export default function BottomNav(){
     function WebShare(){
         return (
@@ -17,7 +20,7 @@ export default function BottomNav(){
               }}
               onClick={() => console.log("shared successfully!")}
             >
-              <ShareIcon/>
+              <ShareIcon sx={{color:"#b377bf"}}/>
             </RWebShare>
           </div>
         );
@@ -25,11 +28,19 @@ export default function BottomNav(){
       function Copy(){
           return(
               <IconButton onClick={() =>  navigator.clipboard.writeText(window.location)}>
-              <FileCopyIcon/>
+              <FileCopyIcon sx={{color:"#b377bf"}}/>
               </IconButton>
           )
       }
+      function Github(){
+        return(
+          <IconButton href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums">
+            <GitHubIcon sx={{color:"#b377bf"}}/>
+          </IconButton>
+        )
+      }
       const actions = [
+        { icon:<Github/>, name:"Repo"},
         { icon: <Copy />, name: 'Copy' },
         { icon: <WebShare />, name: 'Share' },
       ];
@@ -39,8 +50,8 @@ export default function BottomNav(){
             <SpeedDial ariaLabel="SpeedDial basic example"  FabProps={{
                 color: "secondary",
             }}
-        sx={{ position: "fixed", bottom: 16, right: 16, }}
-        icon={<SpeedDialIcon  />}>
+        sx={{ position: "fixed", bottom: 20, right: 20, }}
+        icon={<SpeedDialIcon icon={<InterestsTwoToneIcon/>} openIcon={<CloseIcon/>} />}>
             {actions.map((action) => (
                     <SpeedDialAction
                         key={action.name}
