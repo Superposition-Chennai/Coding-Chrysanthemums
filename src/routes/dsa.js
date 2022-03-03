@@ -1,5 +1,5 @@
 import title from "../img/Software engineer-cuate.png";
-import CardRes from "./cardres";
+import CardRes from "../components/cardres";
 import { useState } from "react";
 export default function DSA() {
   const resources = [

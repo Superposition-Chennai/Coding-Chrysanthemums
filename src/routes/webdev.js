@@ -1,8 +1,6 @@
 import title from "../img/Software engineer-cuate.png";
-import CardRes from "./cardres";
+import CardRes from "../components/cardres";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default function WebDev() {
   const resources = [
     {title: "Web Dev Roadmap", name: "Roadmap.sh", link:"https://roadmap.sh/" },

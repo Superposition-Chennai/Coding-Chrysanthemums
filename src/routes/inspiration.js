@@ -1,5 +1,5 @@
-import { OpenInNew } from "@mui/icons-material";
-import { Avatar, Button, Card, CardActionArea,  CircularProgress, LinearProgress } from "@mui/material";
+import { OpenInNew, SportsEsports } from "@mui/icons-material";
+import { Avatar, Button, Card, CardActionArea,  CircularProgress, IconButton, LinearProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -56,7 +56,7 @@ export default function Inspiration(){
             padding: "2%"}}
             >
                 <h2 >Get Inspired</h2>
-                <h4>Check out some amazing Womxn pioneers in Tech <Link to="/quiz" style={{textDecoration:"none",}}><Button autofocus color="secondary" variant="contained">Quiz me</Button></Link></h4>
+                <h4>Check out some amazing Womxn pioneers in Tech <Link to="/quiz" style={{textDecoration:"none",}}><IconButton sx={{color:"#9d41ab"}}><SportsEsports/></IconButton></Link></h4>
                 <input type="text" placeholder="Search a person 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <div className="list1">
                 {data.filter((val)=>{

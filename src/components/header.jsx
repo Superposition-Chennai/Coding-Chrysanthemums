@@ -19,6 +19,7 @@ import Communities from "../routes/communities";
 import WallofFame from "../routes/walloffame";
 import Inspiration from "../routes/inspiration";
 import Quiz from "../routes/quiz";
+import BottomNav from "./bottomnav";
 const Navi = () => {
   return (
     <>
@@ -106,6 +107,7 @@ const Navi = () => {
             </Route>
           </Switch>
         </Router>
+        <BottomNav/>
       </div>
     </>
   );

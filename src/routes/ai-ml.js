@@ -1,6 +1,6 @@
 import title from "../img/Software engineer-cuate.png";
 import { useState } from "react";
-import CardRes from "./cardres"
+import CardRes from "../components/cardres"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function AIML() {
