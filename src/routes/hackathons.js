@@ -81,6 +81,7 @@ export default function Hackathons(){
     ];
     let mlh_latest = mlh.filter((val)=>{
         var date = new Date();
+        date = date.setHours(0,0,0,0);
         var valdate = new Date(val.startDate);
         if(valdate >= date){
             return val;
@@ -91,6 +92,7 @@ export default function Hackathons(){
     })
     let present = list.filter((val)=>{
         var date = new Date();
+        date = date.setHours(0,0,0,0);
         var valdate = new Date(val.startDate);
         if(valdate >= date){
             return val;
