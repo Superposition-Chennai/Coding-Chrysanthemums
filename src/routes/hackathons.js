@@ -52,6 +52,7 @@ export default function Hackathons(){
             link:"https://cmd-f.nwplus.io/",
             date:"Mar5th-6th",
             startDate:"2022-03-05",
+            endDate:"2022-03-06",
             type:"Diversity"
         },
         {
@@ -60,6 +61,7 @@ export default function Hackathons(){
             link:"https://www.creatica.io/",
             date:"Apr29th-May1st",
             startDate:"2022-04-29",
+            endDate:"2022-05-1",
             type:"Diversity"
         },
         {
@@ -68,6 +70,7 @@ export default function Hackathons(){
             link:"https://chicago.techtogether.io/",
             date:"Feb25TH-27TH",
             startDate:"2022-02-25",
+            endDate:"2022-02-27",
             type:"Diversity"
         },
         {
@@ -76,6 +79,7 @@ export default function Hackathons(){
             link:"https://tqic-cr-gwc-hacks.devpost.com/",
             date:"Mar4th",
             startDate:"2022-03-04",
+            endDate:"2022-03-04",
             type:"Diversity"
         }
     ];
@@ -83,7 +87,10 @@ export default function Hackathons(){
         var date = new Date();
         date = date.setHours(0,0,0,0);
         var valdate = new Date(val.startDate);
-        if(valdate >= date){
+        valdate =  valdate.setHours(0,0,0,0);
+        var valenddate = new Date(val.endDate);
+        valenddate =  valenddate.setHours(0,0,0,0);
+        if(valdate >= date || valenddate>=date){
             return val;
         }  
     });
@@ -94,7 +101,10 @@ export default function Hackathons(){
         var date = new Date();
         date = date.setHours(0,0,0,0);
         var valdate = new Date(val.startDate);
-        if(valdate >= date){
+        valdate =  valdate.setHours(0,0,0,0);
+        var valenddate = new Date(val.endDate);
+        valenddate =  valenddate.setHours(0,0,0,0);
+        if(valdate >= date || valenddate>=date){
             return val;
         }  
     });
