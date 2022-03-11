@@ -83,18 +83,8 @@ export default function Hackathons(){
             type:"Diversity"
         }
     ];
-    let mlh_latest = mlh.filter((val)=>{
-        var date = new Date();
-        date = date.setHours(0,0,0,0);
-        var valdate = new Date(val.startDate);
-        valdate =  valdate.setHours(0,0,0,0);
-        var valenddate = new Date(val.endDate);
-        valenddate =  valenddate.setHours(0,0,0,0);
-        if(valdate >= date || valenddate>=date){
-            return val;
-        }  
-    });
-    mlh_latest.forEach((e)=>{
+    list = list.concat(mlh);
+    mlh.forEach((e)=>{
         e["type"]="MLH";
     })
     let present = list.filter((val)=>{
@@ -108,7 +98,6 @@ export default function Hackathons(){
             return val;
         }  
     });
-    present = present.concat(mlh_latest);
     present.sort((a,b)=>{return (new Date(a.startDate) - new Date(b.startDate))});
     if(dataLoaded==false){
         return(
