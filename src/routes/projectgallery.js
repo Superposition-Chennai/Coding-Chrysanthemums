@@ -1,10 +1,9 @@
-import LogoDevIcon from '@mui/icons-material/LogoDev';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "@material-ui/core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import { CardActionArea, Chip } from "@mui/material";
-import { Hub, Language, Laptop } from "@mui/icons-material";
+import {  Language, Laptop } from "@mui/icons-material";
 function ProjectGallery(props){
     return(
         <CarouselItem className="caroitem" >

@@ -1,5 +1,4 @@
 import "../styles.css";
-import title from "../img/title.png";
 import Resource from "../components/resources";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

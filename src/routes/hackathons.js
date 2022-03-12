@@ -1,5 +1,4 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  Card  } from "@material-ui/core";
 import { OpenInNew } from "@mui/icons-material";
