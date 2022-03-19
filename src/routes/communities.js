@@ -8,7 +8,7 @@ import { useState } from "react";
 function Community(props){
     return(
         <Card className="Card2 item1 opp">
-        <h5><Avatar src={props.img}/> {props.name}</h5>
+        <h5><Avatar src={props.img} alt={props.name}/> {props.name}</h5>
             {/* <img src={props.img}/> */}
             <p>{props.desc}</p>
             <CardActions className="ca">
@@ -37,7 +37,7 @@ export default function Communities(){
             name:"Girls in STEM",
             desc:"Helping young women explore their passions in STEM through exploration, education and inspiration.",
             link:"https://girlsinstem.carrd.co/",
-            img:"https://girlsinstemchapters.carrd.co/assets/images/image01.jpg?v=9e91b120"
+            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQG3bOhbcrbRFg/company-logo_200_200/0/1645828129794?e=1655942400&v=beta&t=D9y0fEZ8iuc1ZS0WSUN44n9uwPxuYKpYJ0MvdARIcLU"
         },
         {
             img:"https://media-exp1.licdn.com/dms/image/C560BAQFp1nxqCZ3pBA/company-logo_200_200/0/1587356018352?e=1653523200&v=beta&t=9-Ur6JYfwI6OgFLzO5wGsJ8gO2Lb2RlqUrMl47HZLC4",
