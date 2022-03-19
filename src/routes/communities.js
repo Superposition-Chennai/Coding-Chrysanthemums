@@ -2,7 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Card, CardActions,  } from "@material-ui/core";
 import { OpenInNew } from "@mui/icons-material";
-import { Avatar,  } from "@mui/material";
+import { Avatar, Pagination,  } from "@mui/material";
 import { useState } from "react";
 
 function Community(props){
@@ -20,6 +20,10 @@ function Community(props){
 
 export default function Communities(){
     const [search, setSearch] = useState('');
+    const [page, setpage] = useState(1);
+    const handlePageChange = (event, newPage) => {
+        setpage(newPage);
+    }
     let list = [
         {
             name:"Women Who Code",
@@ -63,19 +67,17 @@ export default function Communities(){
                 <h4>Check out some amazing Womxn-in-Tech communities to join</h4>
                 <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search a community 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+                <Pagination showFirstButton showLastButton count={Math.ceil(list.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {list.filter((val)=>{
-                    if(search==""){
-                        return val
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
+                {search==""?list.slice((page-1)*10,page*10).map(Community):list.filter((val)=>{
+                    if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val
                     }
                     else if(val.desc.toLowerCase().includes(search.toLowerCase())){
                         return val
                     }
                     
-                }).map(Community)}
+                }).slice((page-1)*10,page*10).map(Community)}
                 </div>
           
                 

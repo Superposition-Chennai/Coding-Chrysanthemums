@@ -1,5 +1,5 @@
 import { OpenInNew, SportsEsports } from "@mui/icons-material";
-import { Avatar, Button, Card, CardActionArea,  CircularProgress, IconButton, LinearProgress } from "@mui/material";
+import { Avatar, Button, Card, CardActionArea,  CircularProgress, IconButton, LinearProgress, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -22,6 +22,7 @@ export default function Inspiration(){
     const [data, setData] = useState([]);
     const [loaded, setLoaded] = useState(false);
     const [search, setSearch] = useState('');
+    const [page, setpage] = useState(1);
     useEffect(()=>{
         fetch("https://women-in-tech.apievangelist.com/apis/people/")
         .then((res)=>res.json())
@@ -30,6 +31,9 @@ export default function Inspiration(){
             setLoaded(true);
         })
     });
+    const handlePageChange = (event, newPage) => {
+        setpage(newPage);
+    }
     if(loaded==false){
         return(
             <div className="App" style={{
@@ -58,16 +62,13 @@ export default function Inspiration(){
                 <h2 >Get Inspired</h2>
                 <h4>Check out some amazing Womxn pioneers in Tech <Link to="/quiz" style={{textDecoration:"none",}}><IconButton sx={{color:"#9d41ab"}}><SportsEsports/></IconButton></Link></h4>
                 <input type="text" placeholder="Search a person 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+                <Pagination showFirstButton showLastButton count={Math.ceil(data.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {data.filter((val)=>{
-                    if(search==""){
-                        return val
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
+                {search==""?data.slice((page-1)*10,page*10).map(People):data.filter((val)=>{
+                    if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val;
                     }
-                    
-                }).map(People)}
+                }).slice((page-1)*10, page*10).map(People)}
                 </div>
         </div>
     )

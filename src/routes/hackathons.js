@@ -2,7 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  Card  } from "@material-ui/core";
 import { OpenInNew } from "@mui/icons-material";
-import { Badge, Button, CardActionArea, CircularProgress, LinearProgress } from '@mui/material';
+import { Badge, Button, CardActionArea, CircularProgress, LinearProgress, Pagination } from '@mui/material';
 import { useState, useEffect } from "react";
   
 
@@ -35,6 +35,7 @@ export default function Hackathons(){
     const [search, setSearch] = useState('');
     const [mlh, setMlh] = useState([]);
     const [dataLoaded, setDataLoaded] = useState(false);
+    const [page, setpage] = useState(1);
     useEffect(()=>{
         fetch("https://mlh-events.vercel.app/2022")
         .then((res)=>res.json())
@@ -44,6 +45,9 @@ export default function Hackathons(){
         });
         
     });
+    const handlePageChange = (event, newPage) => {
+        setpage(newPage);
+    }
     let list = [
         {
             name:"cmd-f",
@@ -128,11 +132,9 @@ export default function Hackathons(){
                 <h4>Check out some awesome inclusive Hackathons</h4>
                 <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+                <Pagination showFirstButton showLastButton count={Math.ceil(present.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {present.filter((val)=>{
-                    if(search==""){
-                        return val
-                    }
+                {search==""?present.slice((page-1)*10,page*10).map(Hackathon):present.filter((val)=>{
                     if(val.location){
                         if(val.location.toLowerCase().includes(search.toLowerCase())){
                             return val;
@@ -156,7 +158,7 @@ export default function Hackathons(){
                         }
                     }
                     
-                }).map(Hackathon)}
+                }).slice((page-1)*10,page*10).map(Hackathon)}
                 </div>
                 <br/>
         </div>
