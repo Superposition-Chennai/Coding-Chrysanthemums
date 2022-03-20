@@ -132,7 +132,7 @@ export default function Hackathons(){
                 <h4>Check out some awesome inclusive Hackathons</h4>
                 <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
-                <Pagination showFirstButton showLastButton count={Math.ceil(present.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
+                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(present.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
                 {search==""?present.slice((page-1)*10,page*10).map(Hackathon):present.filter((val)=>{
                     if(val.location){
