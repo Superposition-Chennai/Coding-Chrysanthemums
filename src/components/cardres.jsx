@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "@material-ui/core";
+import { Card } from "@mui/material";
 import { LibraryBooks } from "@mui/icons-material";
 export default function CardRes(s){
         return(
