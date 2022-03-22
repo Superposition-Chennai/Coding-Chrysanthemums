@@ -1,7 +1,8 @@
 import "./styles.css";
 import title from "./img/title.png";
-import {Card, CardActionArea} from "@material-ui/core";
+import {Card} from "@mui/material";
 import { Link } from "react-router-dom";
+import { Tooltip } from "@mui/material";
 
 export default function App() {
   return (
@@ -23,16 +24,13 @@ export default function App() {
         <div id="homepage">
         <div className="insidediv" >
           <Card className="Card">
-            <Link to="/resources" className="link">
-            <h5>Resources</h5>
-            </Link>
-            <p>Find resources that help you start out with Coding</p>
-          </Card>
-          
-          <Card className="Card">
             <Link to="/opportunities" className="link"><h5>Opportunities</h5></Link>
             <p>Find Scholarships,  Fellowships, and many more</p>
           </Card>
+          <Card className="Card">
+        <Link to="/communities" className="link"><h5>Communities</h5></Link>
+          <p>Check out some amazing Womxn-in-Tech communities to join</p>
+        </Card>
           </div>
           <img
               src={title}
@@ -46,19 +44,13 @@ export default function App() {
           <p>Find Diversity themed Hackathons to apply your learning</p>
         </Card>
         <Card className="Card">
-        <Link to="/gallery" className="link"><h5>Project Gallery</h5></Link>
-          <p>View some cool projects and submit yours too :D</p>
+        <Link to="/inspiration" className="link"><h5>Get Inspired</h5></Link>
+          <p>Check out some amazing Womxn pioneers in Tech</p>
         </Card>
         </div>
         </div>
-        <div id="homepage">
-        <Card className="masterc Card">
-        <Link to="/communities" className="link"><h5>Communities</h5></Link>
-          <p>Check out some amazing Womxn-in-Tech communities to join</p>
-        </Card>
         </div>
-        </div>
-        <footer id="foot"><p>Made with ❤️ by <span style={{textDecorationLine:"underline",textDecorationStyle:"wavy"}}>Rakshaa Viswanathan</span></p></footer>
+        <footer id="foot"><p>Made with ❤️ by <Tooltip title="Founder, Superposition Chennai"><span style={{textDecorationLine:"underline",textDecorationStyle:"wavy"}}>Rakshaa Viswanathan</span></Tooltip></p></footer>
         </div>
       
   );

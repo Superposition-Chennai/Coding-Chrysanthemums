@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card } from "@material-ui/core";
+import { Card, IconButton } from "@mui/material";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import { CardActionArea, Chip } from "@mui/material";
-import {  Language, Laptop } from "@mui/icons-material";
+import {  GitHub, Language, Laptop } from "@mui/icons-material";
 function ProjectGallery(props){
     return(
         <CarouselItem className="caroitem" >
@@ -73,7 +73,7 @@ export default function Gallery(){
             >
                 <h2 >Project Gallery</h2>
                 <h4>Cool projects by Womxn in Tech</h4>
-                <h6>Want to add your project here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+                <h6>Want to add your project here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <div style={{display: "flex",justifyContent: "center"}}>
                 <div className="caro">
                     <Carousel variant='dark' fade indicators="true">

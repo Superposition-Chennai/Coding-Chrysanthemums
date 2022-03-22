@@ -1,4 +1,4 @@
-import { Card } from "@material-ui/core";
+import { Card } from "@mui/material";
 import dsa from "../img/CC images.png";
 import web from "../img/CC images (1).png";
 import ml from "../img/CC images (3).png";

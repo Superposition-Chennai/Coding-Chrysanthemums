@@ -1,9 +1,10 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Card, CardActions,  } from "@material-ui/core";
-import { OpenInNew } from "@mui/icons-material";
+import { Button, Card, CardActions, IconButton,  } from "@mui/material";
+import { GitHub, OpenInNew } from "@mui/icons-material";
 import { Avatar, Pagination,  } from "@mui/material";
 import { useState } from "react";
+import { pink } from "@mui/material/colors";
 
 function Community(props){
     return(
@@ -65,7 +66,7 @@ export default function Communities(){
             >
                 <h2 >Communities</h2>
                 <h4>Check out some amazing Womxn-in-Tech communities to join</h4>
-                <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+                <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search a community 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">

@@ -5,9 +5,7 @@
 .App {
   font-family: "Poppins";
   text-align: center;
-  /* background-color: rgb(223, 194, 250); */
-  background: url('./img/cute\ stuff.png'), linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
-  /* background-image: url("./img/cute\ stuff.png"); */
+  background: url('./img/cute\ stuff.png');
   background-size: 100vw auto;
   background-repeat: no-repeat;
   min-height: 91vh;
@@ -28,7 +26,7 @@ html {
 }
 .Card {
   width: 100%;
-  background-color: #f4f0ff !important;
+  /* background-color: #f4f0ff !important; */
   margin: 2%;
   padding: 20px;
   border-radius: 25px !important;
@@ -39,32 +37,9 @@ html {
 .link h5:hover{
   color: #c71c5e;
 }
-.masterc{
-  width: 100%;
-  background-color: #f4f0ff !important;
-  border-radius: 25px !important;
-  padding: 10px;
-  margin: 10px;
-  width: 230px;
-  height: max-content;
-  background: linear-gradient(120deg, #fff, #fdccf9);
-  border-radius: 25px !important;
-}
-.masterc .link{
-  text-decoration-style: wavy;
-  text-decoration-color: #6e4077;
-  color: #6e4077;
-}
-.masterc h5{
-  font-weight: 700 !important;
-}
-.masterc .link:hover{
-  text-decoration-style: wavy;
-  text-decoration-color: #c71c5e;
-}
+
 .Card1 {
   min-width: 230px;
-  background-color: #f4f0ff !important;
   padding: 1%;
   text-decoration: none;
   display: flex;
@@ -82,7 +57,7 @@ html {
   justify-content: space-between;
 }
 .hack {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5);
+  /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5); */
   text-decoration: none;
   border-radius: 10px !important;
   width: 220px;
@@ -91,7 +66,7 @@ html {
   margin: 0.9%;
 }
 .person {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5);
+  /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5); */
   text-decoration: none;
   border-radius: 10px !important;
   width: 80%;
@@ -122,16 +97,16 @@ html {
 }
 .carousel-indicators li { border-top: unset; width: 10px; border-bottom: unset; border: 1px solid transparent; border-left-width: 0; border-right-width: 0; border-radius: 10px; background-color: rgba(255, 255, 255, 0.4); height: 10px; width: 20px;} .carousel-indicators .active { border-top: unset; border-bottom: unset; border: 1px solid transparent; border-left-width: 0; border-right-width: 0; border-radius: 10px; background-color: #ffffff; height: 10px; width: 50px}
 a {
-  color: #ff59b4;
+  color: #db467f;
 }
 a:hover {
-  color: #ff5982;
+  color: #c71c5e;
 }
 a:visited {
-  color: #ff59b4;
+  color: #db467f;
 }
 a:visited:hover {
-  color: #ff5982;
+  color: #c71c5e;
 }
 .list {
   display: flex;
@@ -161,31 +136,25 @@ a:visited:hover {
   margin: 10px;
   width: 230px;
   height: max-content;
-  background: linear-gradient(120deg, #fff, #fdccf9);
+  /* background: linear-gradient(120deg, rgba(255, 255, 255, 0.281), #fdccf950); */
   border-radius: 25px !important;
 }
 .insidediv .Card .link{
   text-decoration-style: wavy;
-  text-decoration-color: #6e4077;
+  text-decoration-color: #db467f;
 }
 
 .insidediv .Card .link:hover{
   text-decoration-style: wavy;
   text-decoration-color: #c71c5e;
 }
-.insidediv .Card:hover{
-  background-color: #ffffff !important;
-}
 .insidediv .Card h5{
   font-weight: 700;
-  color: #6e4077;
+  color: #db467f;
 }
 .insidediv .Card h5:hover{
   font-weight: 700;
   color: #c71c5e;
-}
-.insidediv .Card p{
-  color: #000000;
 }
 .lm{
   font-weight: 700 !important;
@@ -197,12 +166,9 @@ a:visited:hover {
   width: 100%;
   justify-content: center;
 }
-.opp{
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(120deg, #fff, #fad8e5);
-}
 .opp h5{
   font-weight: 500 !important;
-  color: #000;
+  /* color: #000; */
   text-decoration-line: underline ;
   text-decoration-style: wavy ;
 }
@@ -211,14 +177,14 @@ a:visited:hover {
 }
 .hack h5{
   font-weight: 500 !important;
-  color: #000;
+  /* color: #000; */
   text-decoration-line: underline ;
   text-decoration-style: wavy ;
 }
 
 .person h5{
   font-weight: 500 !important;
-  color: #000;
+  /* color: #000; */
   text-decoration-line: underline ;
   text-decoration-style: wavy ;
 }
@@ -235,7 +201,7 @@ a:visited:hover {
 .App h2{
   font-weight: 600;
 }
-.App h6 a{
+/* .App h6 a{
   color: #6e4077;
 }
 .App h6 a:hover{
@@ -243,13 +209,13 @@ a:visited:hover {
 }
 .App h6 a:visited{
   color: #6e4077;
-}
+} */
 .wof{
   width: 250px;
   height: 250px;
   padding:10px;
   border-radius: 20px !important;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(120deg, #fff, #fad8e5) ;
+  /* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e0b6cc' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(120deg, #fff, #fad8e5) ; */
 }
 .wof .icon{
   transform: scale(4) translateY(60%);
@@ -259,18 +225,23 @@ a:visited:hover {
 }
 .wof a{
   font-weight: 600;
-  color: #000 !important;
+  /* color: #000 !important; */
 }
 #basic-navbar-nav{
   font-family: "Poppins" !important;
 }
+#basic-menu{
+  font-family: "Poppins" !important;
+  text-decoration: none !important;
+  text-transform: capitalize !important;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .celeb{
     width: 100%;
   }
-  .App{
-    background: linear-gradient(rgb(238, 179, 213), rgb(223, 194, 250));
+  .darkswitch{
+    right: 20% !important;
   }
   .list {
     width: 100vw;

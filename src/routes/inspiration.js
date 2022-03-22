@@ -60,7 +60,7 @@ export default function Inspiration(){
             padding: "2%"}}
             >
                 <h2 >Get Inspired</h2>
-                <h4>Check out some amazing Womxn pioneers in Tech <Link to="/quiz" style={{textDecoration:"none",}}><IconButton sx={{color:"#9d41ab"}}><SportsEsports/></IconButton></Link></h4>
+                <h4>Check out some amazing Womxn pioneers in Tech <Link to="/quiz" style={{textDecoration:"none",}}><IconButton><SportsEsports/></IconButton></Link></h4>
                 <input type="text" placeholder="Search a person 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(data.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">

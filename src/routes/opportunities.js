@@ -1,9 +1,9 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPenClip } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Card, CardActions, Typography } from "@material-ui/core";
-import { OpenInNew } from "@mui/icons-material";
-import { Badge } from "@mui/material";
+import { Button, Card, CardActions, IconButton, Typography } from "@mui/material";
+import { GitHub, OpenInNew } from "@mui/icons-material";
+import { Badge, Pagination } from "@mui/material";
 import { useState } from "react";
 
 function Opportunity(props){
@@ -13,7 +13,7 @@ function Opportunity(props){
             <Badge badgeContent={props.type} sx={{".MuiBadge-badge":{backgroundColor:"#f06c91", color:"#fff"}}}className="opptype"></Badge>
             <CardActions className="ca">
                 <Button size="small" href={props.link} className="lm" target="_blank">Learn More <OpenInNew/></Button>
-                <Button size="small" className="lm">{props.time}</Button>
+                <Button size="small" color="secondary" className="lm">{props.time}</Button>
             </CardActions>
         </Card>
     )
@@ -21,6 +21,10 @@ function Opportunity(props){
 
 export default function Opportunities(){
     const [search, setSearch] = useState('');
+    const [page, setpage] = useState(1);
+    const handlePageChange = (event, newPage) => {
+        setpage(newPage);
+    }
     let list = [
         {
             name:"MLH Fellowship",
@@ -91,14 +95,12 @@ export default function Opportunities(){
             >
                 <h2 >Opportunities</h2>
                 <h4>Check out upcoming scholarships, fellowships and more</h4>
-                <h6>Want to add an opportunity here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+                <h6>Want to add an opportunity here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search an opportunity 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {list.filter((val)=>{
-                    if(search==""){
-                        return val
-                    }
-                    else if(val.name.toLowerCase().includes(search.toLowerCase())){
+                {search==""?list.slice((page-1)*10,page*10).map(Opportunity):list.filter((val)=>{
+                    if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val
                     }
                     else if(val.type.toLowerCase().includes(search.toLowerCase())){
@@ -108,7 +110,7 @@ export default function Opportunities(){
                         return val
                     }
                     
-                }).map(Opportunity)}
+                }).slice((page-1)*10,page*10).map(Opportunity)}
                 </div>
                 
         </div>

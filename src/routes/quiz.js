@@ -1,5 +1,5 @@
 import { Cancel, Close, Home } from '@mui/icons-material';
-import {Dialog, DialogActions, DialogContent, DialogTitle, IconButton, LinearProgress, List, ListItem, Snackbar } from '@mui/material';
+import {Dialog, DialogActions, DialogContent, IconButton, LinearProgress, List, ListItem, Snackbar } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import celeb from '../img/Celebration-pana.svg'

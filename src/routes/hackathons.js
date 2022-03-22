@@ -1,7 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  Card  } from "@material-ui/core";
-import { OpenInNew } from "@mui/icons-material";
+import {  Card, IconButton  } from "@mui/material";
+import { GitHub, OpenInNew } from "@mui/icons-material";
 import { Badge, Button, CardActionArea, CircularProgress, LinearProgress, Pagination } from '@mui/material';
 import { useState, useEffect } from "react";
   
@@ -112,7 +112,7 @@ export default function Hackathons(){
                 >
                     <h2 >Hackathons</h2>
                     <h4>Check out some awesome inclusive Hackathons</h4>
-                    <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+                    <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <br/>
                 <div className="list1">
@@ -130,7 +130,7 @@ export default function Hackathons(){
             >
                 <h2 >Hackathons</h2>
                 <h4>Check out some awesome inclusive Hackathons</h4>
-                <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></h6>
+                <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
                 <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(present.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
