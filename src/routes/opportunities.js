@@ -25,67 +25,109 @@ export default function Opportunities(){
     const handlePageChange = (event, newPage) => {
         setpage(newPage);
     }
+    // const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const d = new Date();
+    let name = d.getMonth()+1;
     let list = [
         {
             name:"MLH Fellowship",
             type:"Fellowship",
             time:"All Year",
+            month:"20",
             link:"https://fellowship.mlh.io"
         },
         {
             name:"Microsoft Learn Student Ambassador",
             type:"Student Ambassador",
             time:"All Year",
+            month:"20",
             link:"https://studentambassadors.microsoft.com/"
         },
         {
             name:"Github Campus Expert",
             type:"Student Ambassador",
             time:"All Year",
+            month:"20",
             link:"https://education.github.com/experts"
         },
         {
             name:"Grace Hopper Conference",
             link:"https://ghc.anitab.org/",
             type:"Scholarship",
+            month:"2",
             time:"Feb"
         },
         {
             name:"Generation Google Scholarship (APAC)",
             link:"https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship-apac/",
             type:"Scholarship",
+            month:"3",
             time:"March"
         },
         {
             name:"LinkedIN CoachIN",
             type:"Mentorship",
             time:"March",
+            month:"3",
             link:"https://coachin2021.splashthat.com/"
         },
         {
             name:"Code in Place by Stanford",
             type:"Mentorship",
             time:"March",
+            month:"3",
             link:"https://codeinplace.stanford.edu/"
         },
         {
             name:"Google Summer of Code",
             type:"Internship",
             time:"April",
+            month:"4",
             link:"https://summerofcode.withgoogle.com/",
         },
         {
             name:"Code Jam to I/O for Women",
             link:"https://codingcompetitions.withgoogle.com/codejamio/",
             time:"April",
+            month:"4",
             type:"Scholarship"
         },{
             name:"GDSC Applications (India)",
             type:"Developer Community",
             time:"April",
+            month:"4",
             link:"https://developers.google.com/community/gdsc/leads"
+        },{
+            name:"Women TechMakers Ambassador",
+            type:"Ambassador",
+            time:"April",
+            month:"4",
+            link:"https://docs.google.com/forms/d/e/1FAIpQLSclJkcN8kjG5Cn1grhw4tjc_NojZoGj9Ewah8UDK61KpJmUXA/viewform"
+        },{
+            name:"Kode with Klossy",
+            type:"Scholarship",
+            time:"May",
+            month:"5",
+            link:"https://www.kodewithklossy.com/"
+        },{
+            name:"Women in Product",
+            type:"Scholarship",
+            time:"May",
+            month:"5",
+            link:"https://www.womenpm.org/conference-scholarships"
+        },{
+            name:"Girl Up",
+            type:"Scholarship",
+            time:"May",
+            month:"5",
+            link:"https://clubs.girlup.org/blogs/169/3653"
         }
     ]
+    list = list.filter((val)=>{
+        if (val.month>=name){
+            return val;
+        }
+    })
     return(
         <div className="App" style={{
             fontFamily: "Poppins",
