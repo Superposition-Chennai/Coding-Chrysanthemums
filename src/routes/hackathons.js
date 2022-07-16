@@ -37,7 +37,7 @@ export default function Hackathons(){
     const [dataLoaded, setDataLoaded] = useState(false);
     const [page, setpage] = useState(1);
     useEffect(()=>{
-        fetch("https://mlh-events.vercel.app/2022")
+        fetch("https://mlh-events.vercel.app/2023")
         .then((res)=>res.json())
         .then((val)=>{
             setMlh(val);
