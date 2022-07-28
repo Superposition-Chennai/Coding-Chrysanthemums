@@ -42,19 +42,37 @@ export default function Communities(){
             name:"Girls in STEM",
             desc:"Helping young women explore their passions in STEM through exploration, education and inspiration.",
             link:"https://girlsinstem.carrd.co/",
-            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQG3bOhbcrbRFg/company-logo_200_200/0/1645828129794?e=1655942400&v=beta&t=D9y0fEZ8iuc1ZS0WSUN44n9uwPxuYKpYJ0MvdARIcLU"
+            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQG3bOhbcrbRFg/company-logo_200_200/0/1645828129794?e=1666828800&v=beta&t=ZqSbkM6IxIMfhmab0apNUAHh79w4TkUlL5HzoHdicZ8"
         },
         {
-            img:"https://media-exp1.licdn.com/dms/image/C560BAQFp1nxqCZ3pBA/company-logo_200_200/0/1587356018352?e=1653523200&v=beta&t=9-Ur6JYfwI6OgFLzO5wGsJ8gO2Lb2RlqUrMl47HZLC4",
+            img:"https://media-exp1.licdn.com/dms/image/C560BAQFp1nxqCZ3pBA/company-logo_200_200/0/1587356018352?e=1666828800&v=beta&t=wGjoHg9HzdHbi0hks1eA0EW9C6VnBn6QLSawFH3OmNo",
             name:"Girls in Tech, Inc.",
             desc:"Girls in Tech is a nonprofit organization dedicated to eliminating the gender gap in tech.",
             link:"https://girlsintech.org/"
         },
         {
-            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQFXsxKx8RHwug/company-logo_200_200/0/1640097726558?e=1653523200&v=beta&t=keMcvJ1bIuUBScDzyz7Gb8w-lXKyKUFhQkJtvYUTkFI",
+            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQFXsxKx8RHwug/company-logo_200_200/0/1640097726558?e=1666828800&v=beta&t=QC7fdLsrOU5MqFpQhK98Lr4P3xRNABCZV72HCBuIhK8",
             name:"Rewriting the Code",
             desc:"Empowering College Women in Tech. 15,000+ members and growing!",
             link:"https://teamrtc.org/"
+        },
+        {
+            img:"https://media-exp1.licdn.com/dms/image/C4D0BAQG_Jl1mhgaivQ/company-logo_200_200/0/1625154139770?e=1666828800&v=beta&t=NvOMK60E29xEMp2KYgHU0NAqS-tDYqU2y_vTV-VaqIw",
+            name:"AnitaB.org",
+            desc:"Your donations allow us to continue the fight to elevate the next generation of women leaders.",
+            link:"https://anitab.org/"
+        },
+        {
+            desc:"Empowers girls and women at every stage of their STEAM careers - classroom to the boardroom.",
+            link:"http://www.mywit.org/",
+            name:"Women in Technology (WIT)",
+            img:"https://media-exp1.licdn.com/dms/image/C4D0BAQGgaZidvAMUDQ/company-logo_200_200/0/1658852876088?e=1666828800&v=beta&t=ECOwhotuBY_fRj_x5RldnGFaxBr0QaCV-E79pvKwJqk"
+        },
+        {
+            name:"Women Techmakers",
+            link:"https://developers.google.com/womentechmakers",
+            desc:"Google's Women Techmakers program provides visibility, community, and resources for women in technology.",
+            img:"https://media-exp1.licdn.com/dms/image/C4D0BAQEeSHaUr7UlZA/company-logo_200_200/0/1614199777968?e=1666828800&v=beta&t=jc8ZBHJvm4Qt8GDJA7P93bBw1gY7aM-DlbcaPeahquA"
         }
     ]
     return(
@@ -68,9 +86,9 @@ export default function Communities(){
                 <h4>Check out some amazing Womxn-in-Tech communities to join</h4>
                 <h6>Want to add your community here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search a community 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
-                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/5)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
+                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/4)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {search==""?list.slice((page-1)*5,page*5).map(Community):list.filter((val)=>{
+                {search==""?list.slice((page-1)*4,page*4).map(Community):list.filter((val)=>{
                     if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val
                     }
@@ -78,7 +96,7 @@ export default function Communities(){
                         return val
                     }
                     
-                }).slice((page-1)*5,page*5).map(Community)}
+                }).slice((page-1)*4,page*4).map(Community)}
                 </div>
           
                 
