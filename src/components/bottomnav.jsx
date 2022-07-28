@@ -8,6 +8,7 @@ import { RWebShare } from 'react-web-share';
 import {  IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import InterestsTwoToneIcon from '@mui/icons-material/InterestsTwoTone';
+import { CalendarTodayRounded } from '@mui/icons-material';
 export default function BottomNav(){
     function WebShare(){
         return (
@@ -39,10 +40,18 @@ export default function BottomNav(){
           </IconButton>
         )
       }
+      function Calendly(){
+        return(
+          <IconButton href="https://calendly.com/rakshaa2000/mock-interviews">
+            <CalendarTodayRounded sx={{color:"#b377bf"}}/>
+          </IconButton>
+        )
+      }
       const actions = [
         { icon:<Github/>, name:"Repo"},
         { icon: <Copy />, name: 'Copy' },
         { icon: <WebShare />, name: 'Share' },
+        { icon: <Calendly/>, name: "Mock Interviews"}
       ];
       
     return(

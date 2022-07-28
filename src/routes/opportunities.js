@@ -121,6 +121,30 @@ export default function Opportunities(){
             time:"May",
             month:"5",
             link:"https://clubs.girlup.org/blogs/169/3653"
+        },{
+            name:"Think Swiss Research",
+            type:"Scholarship",
+            time:"Aug",
+            month:"8",
+            link:"https://swissnex.org/india/thinkswiss/"
+        },{
+            name:"Rolls Royce Unnati",
+            type:"Scholarship",
+            time:"Aug",
+            month:"8",
+            link:"https://www.buddy4study.com/page/rolls-royce-unnati-scholarships-for-women-engineering-students" 
+        }, {
+            name:"Google Intern Takeover",
+            type:"Event",
+            time:"Aug",
+            month:"8",
+            link:"https://careersonair.withgoogle.com/events/google-intern-takeover" 
+        }, {
+            link :"https://www.facebook.com/codingcompetitions/hacker-cup",
+            name:"Meta Hacker Cup",
+            type:"Internship",
+            time:"Aug",
+            month:"8"
         }
     ]
     list = list.filter((val)=>{

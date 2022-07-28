@@ -17,7 +17,6 @@ import Gallery from "../routes/projectgallery";
 import Opportunities from "../routes/opportunities";
 import Hackathons from "../routes/hackathons";
 import Communities from "../routes/communities";
-import WallofFame from "../routes/walloffame";
 import Inspiration from "../routes/inspiration";
 import Quiz from "../routes/quiz";
 import BottomNav from "./bottomnav";
@@ -116,9 +115,6 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/inspiration">
                     Get Inspired
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/wof">
-                    Wall of Fame
-                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -148,9 +144,6 @@ const Navi = () => {
             </Route>
             <Route path="/communities">
               <Communities/>
-            </Route>
-            <Route path="/wof">
-              <WallofFame/>
             </Route>
             <Route path="/inspiration">
               <Inspiration/>
