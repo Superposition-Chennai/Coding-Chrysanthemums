@@ -163,9 +163,9 @@ export default function Opportunities(){
                 <h4>Check out upcoming scholarships, fellowships and more</h4>
                 <h6>Want to add an opportunity here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search an opportunity 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
-                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
+                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(list.length/8)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {search==""?list.slice((page-1)*10,page*10).map(Opportunity):list.filter((val)=>{
+                {search==""?list.slice((page-1)*8,page*8).map(Opportunity):list.filter((val)=>{
                     if(val.name.toLowerCase().includes(search.toLowerCase())){
                         return val
                     }
@@ -176,7 +176,7 @@ export default function Opportunities(){
                         return val
                     }
                     
-                }).slice((page-1)*10,page*10).map(Opportunity)}
+                }).slice((page-1)*8,page*8).map(Opportunity)}
                 </div>
                 
         </div>
