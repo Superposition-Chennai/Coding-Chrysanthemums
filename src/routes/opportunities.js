@@ -145,6 +145,36 @@ export default function Opportunities(){
             type:"Internship",
             time:"Aug",
             month:"8"
+        }, {
+            link:"https://www.deshawindia.com/desis-ascend-educare/about.pdf",
+            name:"DESIS Ascend Educare",
+            type:"Mentorship",
+            time:"Aug",
+            month:"8"
+        }, {
+            link:"https://codingcompetitions.withgoogle.com/kickstart",
+            name:"Google Kick Start",
+            type:"Competition",
+            time:"Aug",
+            month:"8"
+        }, {
+            link:"https://www.uni-bonn.de/en/university/",
+            name:"DAAD Scholarship",
+            type:"Research Intern",
+            time:"Aug",
+            month:"8"
+        }, {
+            link:"https://www.mitacs.ca/en/programs/globalink",
+            name:"Mitacs Globalink",
+            type:"Research Intern",
+            time:"Sept",
+            month:"9"
+        }, {
+            link:"https://ghc.anitab.org/",
+            name:"Grace Hopper Conference 2022",
+            type:"Conference",
+            time:"Sept",
+            month:"9"
         }
     ]
     list = list.filter((val)=>{
