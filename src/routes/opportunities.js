@@ -12,8 +12,8 @@ function Opportunity(props){
             <h5>{props.name} </h5><br/>
             <Badge badgeContent={props.type} sx={{".MuiBadge-badge":{backgroundColor:"#f06c91", color:"#fff"}}}className="opptype"></Badge>
             <CardActions className="ca">
-                <Button size="small" href={props.link} className="lm" target="_blank">Learn More <OpenInNew/></Button>
                 <Button size="small" color="secondary" className="lm">{props.time}</Button>
+                <Button size="small" color="secondary" href={props.link} className="lm" target="_blank"><OpenInNew/></Button>
             </CardActions>
         </Card>
     )

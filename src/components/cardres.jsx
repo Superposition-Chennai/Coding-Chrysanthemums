@@ -9,7 +9,7 @@ export default function CardRes(s){
                     <p>
                       {s.name}{" "}
                       <a href={s.link} target="_blank">
-                        <LibraryBooks/>
+                        <LibraryBooks color="secondary"/>
                       </a>
                     </p>
                   </Card>

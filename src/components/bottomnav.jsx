@@ -48,7 +48,7 @@ export default function BottomNav(){
         )
       }
       const actions = [
-        { icon:<Github/>, name:"Repo"},
+        { icon:<Github/>, name:"Contribute"},
         { icon: <Copy />, name: 'Copy' },
         { icon: <WebShare />, name: 'Share' },
         { icon: <Calendly/>, name: "Mock Interviews"}
