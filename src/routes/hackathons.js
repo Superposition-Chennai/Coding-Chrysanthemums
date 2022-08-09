@@ -84,6 +84,15 @@ export default function Hackathons(){
             startDate:"2022-03-04",
             endDate:"2022-03-04",
             type:"Diversity"
+        },
+        {
+            name:"TechNova",
+            img:"https://www.itstechnova.org/static/media/logo.a6d44d35.png",
+            link:"https://itstechnova.org",
+            date:"Aug23rd",
+            startDate:"2022-08-23",
+            endDate:"2022-08-28",
+            type:"Diversity"
         }
     ];
     list = list.concat(mlh);
@@ -132,9 +141,9 @@ export default function Hackathons(){
                 <h4>Check out some awesome inclusive Hackathons</h4>
                 <h6>Want to add your hackathon here? Open a PR <a href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums" target="_blank"><IconButton><GitHub/></IconButton></a></h6>
                 <input type="text" placeholder="Search a hackathon 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
-                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(present.length/10)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
+                <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(present.length/4)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
                 <div className="list1">
-                {search==""?present.slice((page-1)*10,page*10).map(Hackathon):present.filter((val)=>{
+                {search==""?present.slice((page-1)*4,page*4).map(Hackathon):present.filter((val)=>{
                     if(val.location){
                         if(val.location.toLowerCase().includes(search.toLowerCase())){
                             return val;
@@ -158,7 +167,7 @@ export default function Hackathons(){
                         }
                     }
                     
-                }).slice((page-1)*10,page*10).map(Hackathon)}
+                }).slice((page-1)*4,page*4).map(Hackathon)}
                 </div>
                 <br/>
         </div>

@@ -9,6 +9,8 @@ export default function IntPrep() {
     {title: "Algorithms Notes", name: "GoalKicker", link:"https://books.goalkicker.com/AlgorithmsBook/" },
     {title: "DSA with Java", name: "Community Classroom", link:"https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ" },
     {title: "C++, Java, Python Algorithms", name: "The Algorithms", link:"https://github.com/TheAlgorithms/" },
+    {title: "The MEGA Interview Guide", name:"Daniel Del Core",link:"https://danieldelcore.github.io/mega-interview-guide/", },
+    {title:"Coding Interview University", name:"John Washam", link:"https://github.com/jwasham/coding-interview-university"}
   ];
   const [search, setSearch]= useState('');
   return (

@@ -10,7 +10,7 @@ function Mentorship(props){
     return(
         <Card className="Card2 item1 opp">
             <h5>{props.name} </h5>
-            <h7 style={{color:"#f56991"}}>{props.org}</h7>
+            <p style={{fontSize:"12px"}}>by <b>{props.org}</b></p>
             <h7>Join as</h7>
             <CardActions className="ca">
                 <Button size="small" color="secondary" href={props.mentee} className="lm" target="_blank" variant="outlined">Mentee</Button>

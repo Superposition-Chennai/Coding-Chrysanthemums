@@ -11,7 +11,7 @@ function Community(props){
         <Card className="Card2 item1 opp">
         <h5><Avatar src={props.img} alt={props.name}/> {props.name}</h5>
             {/* <img src={props.img}/> */}
-            <p>{props.desc}</p>
+            <p style={{fontSize:"12px", textAlign:"left"}}>{props.desc}</p>
             <CardActions className="ca">
                 <Button size="small" href={props.link} target="_blank" className="lm">Learn More <OpenInNew/> </Button>
             </CardActions>

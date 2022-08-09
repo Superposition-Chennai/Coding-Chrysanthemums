@@ -10,7 +10,7 @@ function People(props){
             <Avatar src={props.image_path} alt={props.name} sx={{ width: 50, height: 50, bgcolor:"#db869d", marginRight:"10px"}}></Avatar>
             <h5>{props.name}</h5>
             </div>
-            <p>{props.details}</p>
+            <p style={{fontSize:"12px", textAlign:"left"}}>{props.details}</p>
             <CardActionArea className="ca">
             <Button size="small" className="lm" color="secondary" href={props.website} target="_blank">Learn More<OpenInNew/></Button>
             </CardActionArea> 

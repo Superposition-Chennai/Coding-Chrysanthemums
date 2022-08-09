@@ -23,7 +23,27 @@ export default function AIML() {
       title:"Crash Course",
       name:"Google Developers",
       link:"https://developers.google.com/machine-learning/crash-course"
-    }
+    },
+    {
+      title:"ML Course Notes",
+      link:"https://github.com/dair-ai/ML-Course-Notes",
+      name:"DAIR.AI"
+    },
+    {
+      title:"Awesome ML Courses",
+      link:"https://github.com/luspr/awesome-ml-courses",
+      name:"Lukas Spranger"
+    },
+    {
+      title:"Lightning Bolts",
+      link:"https://github.com/Lightning-AI/lightning-bolts",
+      name:"Lightning AI"
+    },
+    {
+      title:"Open AI APIs",
+      link:"https://openai.com/",
+      name:"OpenAI"
+    },
   ];
   const [search, setSearch] = useState('');
   return (

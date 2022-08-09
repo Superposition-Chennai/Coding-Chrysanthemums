@@ -9,6 +9,8 @@ export default function WebDev() {
     {title: "JavaScript Course", name: "Codecademy", link:"https://www.codecademy.com/learn/introduction-to-javascript" },
     {title: "Eloquent JavaScript", name: "Marijn Haverbeke", link:"https://eloquentjavascript.net/" },
     {title: "Web Dev Courses", name: "W3 Schools", link:"https://www.w3schools.com/" },
+    {title: "Awesome Web Development", link:'https://web-dev-resources.com/#/',name:"Marko Denic" },
+    {title: "Web Dev For Beginners", link:"https://github.com/microsoft/Web-Dev-For-Beginners", name:"Microsoft"}
   ];
   const [search, setSearch]= useState('');
   return (
