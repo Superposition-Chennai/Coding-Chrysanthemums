@@ -9,7 +9,7 @@ import {
 import {Button, CssBaseline, Menu, MenuItem, Switch as DarkModeSwitch} from '@mui/material';
 import { useState } from "react";
 import logo from "../img/webdev.png";
-import DSA from "../routes/dsa.js";
+import IntPrep from "../routes/dsa.js";
 import AIML from "../routes/ai-ml.js";
 import WebDev from "../routes/webdev.js";
 import App from "../App";
@@ -97,7 +97,7 @@ const Navi = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem  ><Link to="/dsa" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">DSA</Link></MenuItem>
+        <MenuItem  ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
         <MenuItem ><Link to="/webdev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Web Dev</Link></MenuItem>
         <MenuItem ><Link to="/ai"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">AI</Link></MenuItem>
         </Menu>
@@ -128,8 +128,8 @@ const Navi = () => {
             <Route exact path="/">
               <App />
             </Route>
-            <Route path="/dsa">
-              <DSA />
+            <Route path="/interview-prep">
+              <IntPrep />
             </Route>
             <Route path="/webdev">
               <WebDev />

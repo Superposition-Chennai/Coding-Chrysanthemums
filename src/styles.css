@@ -129,20 +129,20 @@ html {
   border-radius: 25px !important;
 }
 .insidediv .Card .link{
+  text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: #db467f;
 }
 
 .insidediv .Card .link:hover{
+  text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: #c71c5e;
 }
 .insidediv .Card h5{
-  font-weight: 700;
   color: #db467f;
 }
 .insidediv .Card h5:hover{
-  font-weight: 700;
   color: #c71c5e;
 }
 .lm{

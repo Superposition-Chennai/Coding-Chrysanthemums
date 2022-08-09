@@ -1,7 +1,7 @@
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "../components/cardres";
 import { useState } from "react";
-export default function DSA() {
+export default function IntPrep() {
   const resources = [
     {title: "DS Collection", name: "GeeksforGeeks", link:"https://www.geeksforgeeks.org/data-structures" },
     {title: "Algo Collection", name: "GeeksforGeeks", link:"https://www.geeksforgeeks.org/fundamentals-of-algorithms/" },
@@ -28,8 +28,8 @@ export default function DSA() {
             alignContent: "center"
           }}
         >
-          <h2>DSA Resources</h2>
-          <h4>Getting started with Data Structures and Algorithms</h4>
+          <h2>Interview Prep Resources</h2>
+          <h4>Ace your Tech Interview with these resources</h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <div className="list">
