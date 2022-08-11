@@ -25,6 +25,7 @@ import { pink, purple } from "@mui/material/colors";
 import { DarkMode, DarkModeTwoTone, LightMode, LightModeTwoTone } from "@mui/icons-material";
 import Mentorships from "../routes/mentorship";
 import Jobs from "../routes/jobs";
+import General from "../routes/general";
 
 // Define theme settings
 const light = createTheme( {
@@ -101,6 +102,7 @@ const Navi = () => {
         <MenuItem  ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
         <MenuItem ><Link to="/webdev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Web Dev</Link></MenuItem>
         <MenuItem ><Link to="/ai"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">AI</Link></MenuItem>
+        <MenuItem ><Link to="/general"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Other Resources</Link></MenuItem>
         </Menu>
                   <Nav.Link as={NavLink} to="/opportunities">
                     Opportunities
@@ -164,6 +166,9 @@ const Navi = () => {
             </Route>
             <Route path="/jobs">
               <Jobs/>
+            </Route>
+            <Route path="/general">
+              <General/>
             </Route>
           </Switch>
         </Router>
