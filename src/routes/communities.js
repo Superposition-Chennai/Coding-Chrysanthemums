@@ -73,7 +73,31 @@ export default function Communities(){
             link:"https://developers.google.com/womentechmakers",
             desc:"Google's Women Techmakers program provides visibility, community, and resources for women in technology.",
             img:"https://media-exp1.licdn.com/dms/image/C4D0BAQEeSHaUr7UlZA/company-logo_200_200/0/1614199777968?e=1666828800&v=beta&t=jc8ZBHJvm4Qt8GDJA7P93bBw1gY7aM-DlbcaPeahquA"
-        }
+        },
+        {
+            name:"Ada's List",
+            link:"https://www.adaslist.co/",
+            desc:"Ada's list is a global community for women in tech, based on principles of inclusion, empowerment and diversity.",
+            img:"https://media-exp1.licdn.com/dms/image/C4E0BAQGV0epQ5RLY9Q/company-logo_200_200/0/1636042853887?e=1668038400&v=beta&t=uNzXoUjXQzY7C1NxerQu0Nt2mTy5U2eUl8r_Tv3VcJU"
+        },
+        {
+            name:"Command Tech",
+            link:"https://commandtech.dev/",
+            desc:"Command Tech is a student-led nonprofit empowering using tech to empower female and nonbinary students.",
+            img:"https://media-exp1.licdn.com/dms/image/C560BAQGWifukjBPWIA/company-logo_200_200/0/1594344144862?e=1668038400&v=beta&t=fFtGF6iamDCXTkU99LMp1mifRpUf0K-iJFb6Ja3twd8"
+        },
+        {
+            name:"Girls Who Code",
+            link:"https://girlswhocode.com/",
+            desc:"An international non-profit organization working to close the gender gap in technology",
+            img:"https://media-exp1.licdn.com/dms/image/C4D0BAQEHUTYYyPFEhQ/company-logo_200_200/0/1588694948823?e=1668038400&v=beta&t=MlvgqgfMDn-QTeRZkqj4nFKm4dPfnIxOkQTXcnH2i1E"
+        },
+        {
+            name:"AI Inclusive",
+            link:"https://www.ai-inclusive.org/",
+            desc:"Worldwide organization to promote diversity in the AI Community. Our mission is to increase the representation and participation of minority groups in Artificial Intelligence.",
+            img:"https://media-exp1.licdn.com/dms/image/C560BAQGd1T76vAlwyw/company-logo_200_200/0/1572897274483?e=1668038400&v=beta&t=mRaZ5cZ2TseZmKkIwPkGAwICG_7oXMR4-hlsIbgM2kI"
+        },
     ]
     return(
         <div className="App" style={{
