@@ -24,7 +24,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { pink, purple } from "@mui/material/colors";
 import { DarkMode, DarkModeTwoTone, LightMode, LightModeTwoTone } from "@mui/icons-material";
 import Mentorships from "../routes/mentorship";
-import Jobs from "../routes/jobs";
 
 // Define theme settings
 const light = createTheme( {
@@ -111,17 +110,14 @@ const Navi = () => {
                   <Nav.Link as={NavLink} to="/communities">
                     Communities
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/mentorship">
-                    Mentorship
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/jobs">
-                    Jobs
-                  </Nav.Link>
                   <Nav.Link as={NavLink} to="/gallery">
                     Gallery
                   </Nav.Link>
                   <Nav.Link as={NavLink} to="/inspiration">
                     Get Inspired
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/mentorship">
+                    Mentorship
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -161,9 +157,6 @@ const Navi = () => {
             </Route>
             <Route path="/mentorship">
               <Mentorships/>
-            </Route>
-            <Route path="/jobs">
-              <Jobs/>
             </Route>
           </Switch>
         </Router>
