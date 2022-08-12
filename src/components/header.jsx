@@ -100,11 +100,11 @@ const Navi = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem  ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
+        <MenuItem ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
         <MenuItem ><Link to="/webdev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Web Dev</Link></MenuItem>
-        <MenuItem ><Link to="/ai"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">AI</Link></MenuItem>
-        <MenuItem ><Link to="/android"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Android</Link></MenuItem>
-        <MenuItem ><Link to="/general"style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Other Resources</Link></MenuItem>
+        <MenuItem ><Link to="/ai" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Artificial Intelligence</Link></MenuItem>
+        <MenuItem ><Link to="/android" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Android</Link></MenuItem>
+        <MenuItem ><Link to="/general" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Other Resources</Link></MenuItem>
         </Menu>
                   <Nav.Link as={NavLink} to="/opportunities">
                     Opportunities

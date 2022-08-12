@@ -1,6 +1,7 @@
 import title from "../img/Software engineer-cuate.png";
 import { useState } from "react";
 import CardRes from "../components/cardres"
+import { Pagination } from "@mui/material";
 export default function Android() {
 
   let resources = [
@@ -26,6 +27,10 @@ export default function Android() {
     },
   ];
   const [search, setSearch] = useState('');
+  const [page, setpage] = useState(1);
+  const handlePageChange = (event, newPage) => {
+      setpage(newPage);
+  }
   return (
       <div
         className="App"
@@ -46,6 +51,7 @@ export default function Android() {
           <h4>Getting started with Android</h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+          <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(resources.length/4)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
           <div className="list1">
             {resources.filter((val)=>{
               if(search==""){
@@ -57,7 +63,7 @@ export default function Android() {
               else if (val.name.toLowerCase().includes(search.toLowerCase())){
                 return val;
               }  
-            }).map(CardRes)}
+            }).slice((page-1)*4, page*4).map(CardRes)}
           </div>
         </div>
       </div>

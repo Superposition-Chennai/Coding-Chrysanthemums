@@ -1,6 +1,7 @@
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "../components/cardres";
 import { useState } from "react";
+import { Pagination } from "@mui/material";
 export default function WebDev() {
   const resources = [
     {title: "Web Dev Roadmap", name: "Roadmap.sh", link:"https://roadmap.sh/" },
@@ -13,6 +14,10 @@ export default function WebDev() {
     {title: "Web Dev For Beginners", link:"https://github.com/microsoft/Web-Dev-For-Beginners", name:"Microsoft"}
   ];
   const [search, setSearch]= useState('');
+  const [page, setPage] = useState(1);
+  const handlePageChange = (event, newPage) =>{
+      setPage(newPage);
+  }
   return (
     <>
       <div
@@ -34,6 +39,7 @@ export default function WebDev() {
           <h4>Getting started with Web Development </h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
+          <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(resources.length/4)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
           <div className="list1">
             {resources.filter((val)=>{
               if(search==""){
@@ -45,7 +51,7 @@ export default function WebDev() {
               else if (val.name.toLowerCase().includes(search.toLowerCase())){
                 return val;
               }  
-            }).map(CardRes)}
+            }).slice((page-1)*4, page*4).map(CardRes)}
           </div>
         </div>
       </div>
