@@ -1,7 +1,7 @@
 import title from "../img/Software engineer-cuate.png";
 import CardRes from "../components/cardres";
 import { useState } from "react";
-import { Pagination } from "react-bootstrap";
+import { Pagination } from "@mui/material";
 export default function IntPrep() {
   const resources = [
     {title: "DS Collection", name: "GeeksforGeeks", link:"https://www.geeksforgeeks.org/data-structures" },
