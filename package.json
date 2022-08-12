@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://coding-chrysanthemums.netlify.app/",
+  
   "main": "src/index.js",
   "dependencies": {
     "@emotion/react": "^11.8.1",
