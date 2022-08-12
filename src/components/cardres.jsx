@@ -3,16 +3,14 @@ import { Card } from "@mui/material";
 import { LibraryBooks } from "@mui/icons-material";
 export default function CardRes(s){
         return(
-            <div className="item">
-                  <Card className="Card1">
-                    <h4>{s.title}</h4>
-                    <p>
+                  <Card className="Card2 item1 opp">
+                    <h5>{s.title}</h5>
+                    <p style={{fontSize:"12px"}}>
                       {s.name}{" "}
                       <a href={s.link} target="_blank">
                         <LibraryBooks color="secondary"/>
                       </a>
                     </p>
                   </Card>
-            </div>
         );
 }

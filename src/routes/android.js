@@ -46,7 +46,7 @@ export default function Android() {
           <h4>Getting started with Android</h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
-          <div className="list">
+          <div className="list1">
             {resources.filter((val)=>{
               if(search==""){
                 return val;
