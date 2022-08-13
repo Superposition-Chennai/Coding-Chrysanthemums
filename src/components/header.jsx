@@ -93,7 +93,7 @@ const Navi = () => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}>
-                    Resources
+                    Learn with Us
                   </Nav.Link>
                   <Menu id="basic-menu"
         anchorEl={anchorEl}
