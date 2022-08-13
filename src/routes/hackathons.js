@@ -1,5 +1,3 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  Card, IconButton  } from "@mui/material";
 import { GitHub, OpenInNew } from "@mui/icons-material";
 import { Badge, Button, CardActionArea, CircularProgress, LinearProgress, Pagination } from '@mui/material';

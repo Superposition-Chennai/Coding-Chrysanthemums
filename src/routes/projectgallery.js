@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, IconButton } from "@mui/material";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import { CardActionArea, Chip } from "@mui/material";
 import {  GitHub, Language, Laptop } from "@mui/icons-material";
