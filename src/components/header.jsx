@@ -177,7 +177,7 @@ const Navi = () => {
             <Route path="/android">
               <Android/>
             </Route>
-            <Route path="/android">
+            <Route path="/gamedev">
               <GameDev/>
             </Route>
           </Switch>
