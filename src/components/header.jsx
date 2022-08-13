@@ -28,6 +28,7 @@ import Jobs from "../routes/jobs";
 import General from "../routes/general";
 import Android from "../routes/android";
 import GameDev from "../routes/gamedev";
+import DataScience from "../routes/datascience";
 
 // Define theme settings
 const light = createTheme( {
@@ -106,6 +107,7 @@ const Navi = () => {
         <MenuItem ><Link to="/ai" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Artificial Intelligence</Link></MenuItem>
         <MenuItem ><Link to="/android" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Android</Link></MenuItem>
         <MenuItem ><Link to="/gamedev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Game Dev</Link></MenuItem>
+        <MenuItem ><Link to="/datascience" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Dat Science</Link></MenuItem>
         <MenuItem ><Link to="/general" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Other Resources</Link></MenuItem>
         </Menu>
                   <Nav.Link as={NavLink} to="/opportunities">
@@ -179,6 +181,9 @@ const Navi = () => {
             </Route>
             <Route path="/gamedev">
               <GameDev/>
+            </Route>
+            <Route path="/datascience">
+              <DataScience/>
             </Route>
           </Switch>
         </Router>
