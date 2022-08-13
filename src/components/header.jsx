@@ -29,6 +29,7 @@ import General from "../routes/general";
 import Android from "../routes/android";
 import GameDev from "../routes/gamedev";
 import DataScience from "../routes/datascience";
+import Design from "../routes/design";
 
 // Define theme settings
 const light = createTheme( {
@@ -102,13 +103,14 @@ const Navi = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
-        <MenuItem ><Link to="/webdev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Web Dev</Link></MenuItem>
-        <MenuItem ><Link to="/ai" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Artificial Intelligence</Link></MenuItem>
         <MenuItem ><Link to="/android" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Android</Link></MenuItem>
-        <MenuItem ><Link to="/gamedev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Game Dev</Link></MenuItem>
+        <MenuItem ><Link to="/ai" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Artificial Intelligence</Link></MenuItem>
         <MenuItem ><Link to="/datascience" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Data Science</Link></MenuItem>
+        <MenuItem ><Link to="/design" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Design</Link></MenuItem>
+        <MenuItem ><Link to="/gamedev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Game Dev</Link></MenuItem>
+        <MenuItem ><Link to="/interview-prep" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}} id="basic-menu">Interview Prep</Link></MenuItem>
         <MenuItem ><Link to="/general" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Other Resources</Link></MenuItem>
+        <MenuItem ><Link to="/webdev" style={isDarkTheme ? {color:"#fff"}:{color:"#000"}}  id="basic-menu">Web Dev</Link></MenuItem>
         </Menu>
                   <Nav.Link as={NavLink} to="/opportunities">
                     Opportunities
@@ -184,6 +186,9 @@ const Navi = () => {
             </Route>
             <Route path="/datascience">
               <DataScience/>
+            </Route>
+            <Route path="/design">
+              <Design/>
             </Route>
           </Switch>
         </Router>
