@@ -48,7 +48,7 @@ export default function DataScience() {
           }}
         >
           <h2>Data Science</h2>
-          <h4>Getting started with Android</h4>
+          <h4>Getting started with Data Science</h4>
           <img src={title} alt="title" width="200px" />
           <input type="text" placeholder="Search a resource 🔍" onChange={event=>{setSearch(event.target.value)}} style={{width:"70%", height:"40px", padding:"2%", borderRadius:"20px", border:"none", background:"#FFE8F4", margin:"1%"}}/>
           <Pagination siblingCount={0} showFirstButton showLastButton count={Math.ceil(resources.length/4)} sx={{display:"flex",justifyContent:"center"}} color="secondary" page={page} onChange={handlePageChange}/>
