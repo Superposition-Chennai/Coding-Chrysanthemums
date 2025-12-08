@@ -33,7 +33,7 @@ const Mentorship = () => {
     const fetchMentors = async () => {
         setLoading(true);
         try {
-            const res = await fetch('/api/mentors');
+            const res = await fetch(API_URL);
             if (res.ok) {
                 const data = await res.json();
                 setMentors(data);
@@ -59,7 +59,7 @@ const Mentorship = () => {
                 expertise: formData.expertise.split(',').map(s => s.trim()) // Convert CSV string to array
             };
 
-            const res = await fetch('/api/mentors', {
+            const res = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
