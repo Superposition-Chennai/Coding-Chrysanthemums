@@ -12,6 +12,7 @@
     "start:dev": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
+    "@netlify/blobs": "^10.4.3",
     "body-parser": "^2.2.1",
     "clsx": "^2.1.1",
     "concurrently": "^9.2.1",

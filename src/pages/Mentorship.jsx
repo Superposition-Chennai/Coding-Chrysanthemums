@@ -10,7 +10,7 @@ const Mentorship = () => {
     const [loading, setLoading] = useState(false);
 
     // Use Netlify Functions endpoint
-    const API_URL = '/.netlify/functions/mentors';
+    const API_URL = '/api/mentors';
 
     // Form State
     const [formData, setFormData] = useState({
