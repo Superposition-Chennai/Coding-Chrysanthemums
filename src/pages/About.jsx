@@ -56,7 +56,7 @@ const About = () => {
                     <p className="text-slate-300">
                         Whether you're writing your first line of code or leading a team of engineers, there's a place for you here. Connect with mentors, find your next role, or just learn something new.
                     </p>
-                    <a href="https://github.com/login" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-200 transition-colors">
+                    <a href="https://github.com/Superposition-Chennai/" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-200 transition-colors">
                         Join Community
                     </a>
                 </div>

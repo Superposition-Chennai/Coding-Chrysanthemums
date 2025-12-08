@@ -115,7 +115,7 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 className="mt-2 text-center px-4 py-3 rounded-lg bg-accent-600 hover:bg-accent-500 transition-all text-sm font-semibold text-white"
                             >
-                                Join Community
+                                Contribute to CC
                             </a>
                         </div>
                     </motion.div>
