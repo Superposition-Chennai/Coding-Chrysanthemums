@@ -70,7 +70,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         className="px-4 py-2 rounded-full bg-accent-600 hover:bg-accent-500 transition-all duration-300 text-sm font-semibold text-white shadow-lg"
                     >
-                        Join Community
+                        Contribute to CC
                     </a>
                 </div>
 
