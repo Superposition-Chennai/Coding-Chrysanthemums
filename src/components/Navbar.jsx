@@ -65,7 +65,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums"
+                        href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums/tree/feature/full-redesign"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 rounded-full bg-accent-600 hover:bg-accent-500 transition-all duration-300 text-sm font-semibold text-white shadow-lg"
@@ -110,7 +110,7 @@ const Navbar = () => {
                                 </Link>
                             ))}
                             <a
-                                href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums"
+                                href="https://github.com/Superposition-Chennai/Coding-Chrysanthemums/tree/feature/full-redesign"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-2 text-center px-4 py-3 rounded-lg bg-accent-600 hover:bg-accent-500 transition-all text-sm font-semibold text-white"
