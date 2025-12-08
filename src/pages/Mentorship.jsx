@@ -9,6 +9,9 @@ const Mentorship = () => {
     const [mentors, setMentors] = useState([]);
     const [loading, setLoading] = useState(false);
 
+    // Use Netlify Functions endpoint
+    const API_URL = '/.netlify/functions/mentors';
+
     // Form State
     const [formData, setFormData] = useState({
         name: '',
