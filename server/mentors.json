@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1765191546836,
+    "name": "Rakshaa",
+    "role": "SWE",
+    "company": "MSFT",
+    "bio": "Looking forward to mentoring and growing",
+    "expertise": [
+      "C#",
+      "C++",
+      ".NET",
+      "DSA",
+      "Python",
+      "Java",
+      "Design Patterns"
+    ],
+    "link": "https://rakshaa.dev",
+    "dateAdded": "2025-12-08T10:59:06.836Z"
+  }
+]
